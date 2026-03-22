@@ -26,43 +26,42 @@ try:
         for row in rows:
             cells = row.find_all(['th', 'td'])
             
-            # තීරු 2ක් හෝ වැඩි ගණනක් තියෙනවා නම්
             if len(cells) >= 2:
                 first_col = cells[0].text.strip()
                 
-                # දිනයක්දැයි හඳුනාගැනීම (අංක තිබිය යුතුයි, නමුත් Rs, Ounce, Gram වැනි වචන නොතිබිය යුතුයි)
+                # දිනයක්දැයි හඳුනාගැනීම
                 has_numbers = any(char.isdigit() for char in first_col)
-                invalid_words = ['Rs', 'Ounce', 'Gram', 'Carat']
+                invalid_words = ['Rs', 'Ounce', 'Gram', 'Carat', 'Price', 'Date']
                 is_invalid = any(word in first_col for word in invalid_words)
                 
                 if has_numbers and not is_invalid and len(first_col) <= 20:
                     date_text = first_col
                     
-                    # මේ පේළියේ තියෙන ඔක්කොම මිල ගණන් ටික ගන්නවා
                     prices = []
                     for cell in cells[1:]:
-                        clean_num = re.sub(r'[^\d]', '', cell.text.split('.')[0])
+                        # දෝෂය නිවැරදි කළ තැන: 'Rs.', 'Rs' සහ කොමා ඉවත් කර පිරිසිදු කිරීම
+                        cell_text = cell.text.replace('Rs.', '').replace('Rs', '').replace(',', '').strip()
+                        clean_str = cell_text.split('.')[0] 
+                        clean_num = re.sub(r'[^\d]', '', clean_str)
+                        
                         if clean_num:
                             prices.append(int(clean_num))
                     
                     if len(prices) >= 2:
-                        print(f"Found Date: {date_text} | Prices in row: {prices}")
+                        print(f"Date: {date_text} | Extracted Prices: {prices}")
                         
-                        # ස්වයංක්‍රීයව මිල තෝරාගැනීම (තීරු මාරු වී තිබුණද මෙය ක්‍රියාත්මක වේ)
                         p_24k_1g = 0
                         p_22k_8g = 0
                         
-                        # ග්‍රෑම් 1ක සාමාන්‍ය මිල 10,000-80,000 අතර වන අතර පවුමක මිල 100,000 ට වැඩිය.
-                        gram_prices = [p for p in prices if 10000 < p < 80000]
+                        # මිල අනුව කාණ්ඩ කිරීම
+                        gram_prices = [p for p in prices if 10000 < p < 85000]
                         pawn_prices = [p for p in prices if p > 100000]
                         
-                        # ග්‍රෑම් 1 හි වැඩිම අගය 24k ලෙසද, පවුමේ අඩුම අගය 22k ලෙසද තෝරයි
                         if gram_prices:
                             p_24k_1g = max(gram_prices) 
                         if pawn_prices:
                             p_22k_8g = min(pawn_prices) 
                         
-                        # අගයන් දෙකම හම්බුනා නම් විතරක් Dictionary එකට එකතු කරනවා
                         if p_24k_1g > 0 and p_22k_8g > 0:
                             scraped_data[date_text] = {
                                 "price_24k_1g": p_24k_1g,
@@ -91,7 +90,6 @@ try:
     for date, prices in scraped_data.items():
         merged_dict[date] = prices
 
-    # දින අනුව Sort කිරීම
     sorted_dates = sorted(merged_dict.keys())
     
     final_data = []
