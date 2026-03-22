@@ -14,32 +14,35 @@ try:
     response.raise_for_status()
     soup = BeautifulSoup(response.content, 'html.parser')
 
-    scraped_data = []
+    scraped_data = {}
 
-    # වෙබ් අඩවියේ ඇති සියලුම tables හොයනවා
     tables = soup.find_all('table')
     
     for table in tables:
         rows = table.find_all('tr')
         for row in rows:
             cols = row.find_all('td')
-            # දිනය සහ මිල තීරුවල තියෙන නිසා, තීරු 2ක් හෝ වැඩි ගණනක් තියෙනවද බලනවා
-            if len(cols) >= 2:
+            
+            if len(cols) >= 5:
                 date_text = cols[0].text.strip()
-                price_text = cols[1].text.strip()
                 
-                # දිනයක් විදිහට හඳුනාගන්න (අංක තියෙනවද බලනවා)
-                if any(char.isdigit() for char in date_text):
-                    # මිලෙන් අංක විතරක් වෙන් කරගන්නවා ("Rs." සහ කොමා අයින් කරලා)
-                    clean_price = re.sub(r'[^\d]', '', price_text)
+                # දිනය නිවැරදිදැයි පරීක්ෂා කිරීම
+                if re.match(r"^\d{4}-\d{2}-\d{2}$", date_text):
                     
-                    # රත්‍රන් මිලක් සාමාන්‍යයෙන් රුපියල් 10,000 ට වඩා වැඩියි 
-                    # (මේකෙන් වගුවේ තියෙන වෙනත් අදාළ නැති කුඩා අංක අයින් වෙනවා)
-                    if clean_price and int(clean_price) > 10000:
-                        scraped_data.append({
-                            "date": date_text,
-                            "price": int(clean_price)
-                        })
+                    price_24k_text = cols[2].text.strip() # 24 Carat 1 Gram (3 වෙනි තීරුව)
+                    price_22k_text = cols[4].text.strip() # 22 Carat 8 Grams (5 වෙනි තීරුව)
+                    
+                    try:
+                        clean_24k = int(re.sub(r'[^\d]', '', price_24k_text.split('.')[0]))
+                        clean_22k = int(re.sub(r'[^\d]', '', price_22k_text.split('.')[0]))
+                        
+                        if clean_24k > 0 and clean_22k > 0:
+                            scraped_data[date_text] = {
+                                "price_24k_1g": clean_24k,
+                                "price_22k_8g": clean_22k
+                            }
+                    except ValueError:
+                        continue
 
     file_path = 'data.json'
     
@@ -51,20 +54,31 @@ try:
             except json.JSONDecodeError:
                 pass
 
-    # දත්ත Dictionary එකක් විදිහට හදාගන්නවා (Date එක key එක විදිහට)
-    merged_dict = {item["date"]: item["price"] for item in existing_data if item["price"] > 0}
+    # පරණ දත්ත තියෙනවා නම් ඒවා අරගන්නවා (කලින් තිබ්බ "price" එකත් 22k_8g විදිහටම ගන්නවා)
+    merged_dict = {}
+    for item in existing_data:
+        merged_dict[item["date"]] = {
+            "price_24k_1g": item.get("price_24k_1g", 0),
+            "price_22k_8g": item.get("price_22k_8g", item.get("price", 0))
+        }
     
-    # අලුතින් scrape කරපු දත්ත වලින් ඒක update කරනවා
-    # Site එකේ පරණම දවසේ ඉඳන් අලුත්ම දවසට පිළිවෙලට තියෙන්න අපි list එක reverse කරනවා
-    scraped_data.reverse()
+    # අලුත් දත්ත වලින් යාවත්කාලීන කිරීම
+    for date, prices in scraped_data.items():
+        merged_dict[date] = prices
+
+    # දින අනුව Sort කිරීම
+    sorted_dates = sorted(merged_dict.keys())
     
-    for item in scraped_data:
-        merged_dict[item["date"]] = item["price"]
+    final_data = []
+    for k in sorted_dates:
+        # මිල 0 ට වඩා වැඩි ඒවා පමණක් සේව් කරනවා
+        if merged_dict[k]["price_24k_1g"] > 0 and merged_dict[k]["price_22k_8g"] > 0:
+            final_data.append({
+                "date": k,
+                "price_24k_1g": merged_dict[k]["price_24k_1g"],
+                "price_22k_8g": merged_dict[k]["price_22k_8g"]
+            })
 
-    # ආයෙමත් JSON එකට ගැලපෙන විදිහට list එකක් කරනවා
-    final_data = [{"date": k, "price": v} for k, v in merged_dict.items()]
-
-    # File එකට ලියනවා
     with open(file_path, 'w') as file:
         json.dump(final_data, file, indent=4)
 
