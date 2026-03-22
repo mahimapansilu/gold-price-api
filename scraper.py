@@ -5,60 +5,82 @@ import re
 import os
 
 url = "https://www.ideabeam.com/finance/rates/goldprice.php"
+
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
 }
 
 try:
-    response = requests.get(url, headers=headers)
-    response.raise_for_status()
-    soup = BeautifulSoup(response.content, 'html.parser')
-
-    scraped_data = {}
-
-    tables = soup.find_all('table')
+    print("--- STARTING SCRAPER ---")
+    response = requests.get(url, headers=headers, timeout=15)
+    print(f"Website Status Code: {response.status_code}")
     
-    for table in tables:
+    soup = BeautifulSoup(response.content, 'html.parser')
+    scraped_data = {}
+    
+    tables = soup.find_all('table')
+    print(f"Found {len(tables)} tables on the page.")
+
+    for i, table in enumerate(tables):
         rows = table.find_all('tr')
         for row in rows:
-            # <th> (Table Header) සහ <td> (Table Data) කියන දෙකම ගන්නවා
             cells = row.find_all(['th', 'td'])
             
-            # තීරු 6ක් හෝ ඊට වඩා තියෙන පේළි විතරක් තෝරනවා
-            if len(cells) >= 6:
-                date_text = cells[0].text.strip()
+            # තීරු 2ක් හෝ වැඩි ගණනක් තියෙනවා නම්
+            if len(cells) >= 2:
+                first_col = cells[0].text.strip()
                 
-                # දිනය නිවැරදිදැයි පරීක්ෂා කිරීම (උදා: 2026-03-20)
-                if re.match(r"^\d{4}-\d{2}-\d{2}$", date_text):
+                # දිනයක්දැයි හඳුනාගැනීම (අංක තිබිය යුතුයි, නමුත් Rs, Ounce, Gram වැනි වචන නොතිබිය යුතුයි)
+                has_numbers = any(char.isdigit() for char in first_col)
+                invalid_words = ['Rs', 'Ounce', 'Gram', 'Carat']
+                is_invalid = any(word in first_col for word in invalid_words)
+                
+                if has_numbers and not is_invalid and len(first_col) <= 20:
+                    date_text = first_col
                     
-                    price_24k_text = cells[2].text.strip() # 24 Carat 1 Gram (3 වෙනි තීරුව)
-                    price_22k_text = cells[4].text.strip() # 22 Carat 8 Grams (5 වෙනි තීරුව)
+                    # මේ පේළියේ තියෙන ඔක්කොම මිල ගණන් ටික ගන්නවා
+                    prices = []
+                    for cell in cells[1:]:
+                        clean_num = re.sub(r'[^\d]', '', cell.text.split('.')[0])
+                        if clean_num:
+                            prices.append(int(clean_num))
                     
-                    try:
-                        # සත ගණන් (.00) ඉවත් කර පිරිසිදු අංකය ලබා ගැනීම
-                        clean_24k = int(re.sub(r'[^\d]', '', price_24k_text.split('.')[0]))
-                        clean_22k = int(re.sub(r'[^\d]', '', price_22k_text.split('.')[0]))
+                    if len(prices) >= 2:
+                        print(f"Found Date: {date_text} | Prices in row: {prices}")
                         
-                        if clean_24k > 0 and clean_22k > 0:
+                        # ස්වයංක්‍රීයව මිල තෝරාගැනීම (තීරු මාරු වී තිබුණද මෙය ක්‍රියාත්මක වේ)
+                        p_24k_1g = 0
+                        p_22k_8g = 0
+                        
+                        # ග්‍රෑම් 1ක සාමාන්‍ය මිල 10,000-80,000 අතර වන අතර පවුමක මිල 100,000 ට වැඩිය.
+                        gram_prices = [p for p in prices if 10000 < p < 80000]
+                        pawn_prices = [p for p in prices if p > 100000]
+                        
+                        # ග්‍රෑම් 1 හි වැඩිම අගය 24k ලෙසද, පවුමේ අඩුම අගය 22k ලෙසද තෝරයි
+                        if gram_prices:
+                            p_24k_1g = max(gram_prices) 
+                        if pawn_prices:
+                            p_22k_8g = min(pawn_prices) 
+                        
+                        # අගයන් දෙකම හම්බුනා නම් විතරක් Dictionary එකට එකතු කරනවා
+                        if p_24k_1g > 0 and p_22k_8g > 0:
                             scraped_data[date_text] = {
-                                "price_24k_1g": clean_24k,
-                                "price_22k_8g": clean_22k
+                                "price_24k_1g": p_24k_1g,
+                                "price_22k_8g": p_22k_8g
                             }
-                    except ValueError:
-                        continue
+
+    print(f"\nTotal Valid Records Scraped: {len(scraped_data)}")
 
     file_path = 'data.json'
-    
     existing_data = []
+    
     if os.path.exists(file_path):
         with open(file_path, 'r') as file:
             try:
                 existing_data = json.load(file)
-            except json.JSONDecodeError:
+            except:
                 pass
 
-    # පරණ දත්ත තියෙනවා නම් ඒවා අරගන්නවා
     merged_dict = {}
     for item in existing_data:
         merged_dict[item["date"]] = {
@@ -66,7 +88,6 @@ try:
             "price_22k_8g": item.get("price_22k_8g", item.get("price", 0))
         }
     
-    # අලුත් දත්ත වලින් යාවත්කාලීන කිරීම
     for date, prices in scraped_data.items():
         merged_dict[date] = prices
 
@@ -75,7 +96,6 @@ try:
     
     final_data = []
     for k in sorted_dates:
-        # මිල 0 ට වඩා වැඩි ඒවා පමණක් සේව් කරනවා
         if merged_dict[k]["price_24k_1g"] > 0 and merged_dict[k]["price_22k_8g"] > 0:
             final_data.append({
                 "date": k,
@@ -83,13 +103,11 @@ try:
                 "price_22k_8g": merged_dict[k]["price_22k_8g"]
             })
 
-    # GitHub Action එකේ Log එකක් පෙන්නන්න print කරනවා
-    print(f"Scraped {len(scraped_data)} valid records from the website.")
-
     with open(file_path, 'w') as file:
         json.dump(final_data, file, indent=4)
 
-    print(f"Successfully saved to json. Total records in file: {len(final_data)}")
+    print(f"Successfully saved {len(final_data)} records to data.json")
+    print("--- SCRAPER FINISHED ---")
 
 except Exception as e:
-    print(f"Error: {e}")
+    print(f"CRITICAL ERROR: {e}")
