@@ -3,109 +3,102 @@ from bs4 import BeautifulSoup
 import json
 import re
 import os
+import datetime
 
-url = "https://www.ideabeam.com/finance/rates/goldprice.php"
+# 1. දත්ත ලබාගන්නා මූලාශ්‍ර
+GOLD_URL = "https://www.ideabeam.com/finance/rates/goldprice.php"
+NEWS_URL = "https://www.kitco.com/rss/gold-news/" # ලෝක රත්‍රන් පුවත් ලබාගන්නා තැන
 
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-}
+headers = {'User-Agent': 'Mozilla/5.0'}
+
+def get_news_sentiment():
+    """ලෝක පුවත් කියවා වෙළඳපොළ තත්ත්වය (+1, 0, -1) තීරණය කරයි"""
+    sentiment = 0
+    try:
+        resp = requests.get(NEWS_URL, timeout=10)
+        soup = BeautifulSoup(resp.content, 'xml')
+        headlines = soup.find_all('title')
+        
+        positive_words = ['rise', 'high', 'jump', 'bullish', 'increase', 'gain', 'strong']
+        negative_words = ['fall', 'low', 'drop', 'bearish', 'decrease', 'loss', 'weak']
+        
+        text = " ".join([h.text.lower() for h in headlines])
+        
+        pos_score = sum(text.count(word) for word in positive_words)
+        neg_score = sum(text.count(word) for word in negative_words)
+        
+        if pos_score > neg_score: sentiment = 0.005 # 0.5% වර්ධනයක්
+        elif neg_score > pos_score: sentiment = -0.005 # 0.5% අඩුවීමක්
+    except:
+        pass
+    return sentiment
 
 try:
-    print("--- STARTING SCRAPER ---")
-    response = requests.get(url, headers=headers, timeout=15)
-    print(f"Website Status Code: {response.status_code}")
-    
+    print("--- SCRAPING STARTED ---")
+    # රත්‍රන් මිල Scrape කිරීම (කලින් කළ ආකාරයටම)
+    response = requests.get(GOLD_URL, headers=headers)
     soup = BeautifulSoup(response.content, 'html.parser')
     scraped_data = {}
     
     tables = soup.find_all('table')
-    print(f"Found {len(tables)} tables on the page.")
-
-    for i, table in enumerate(tables):
-        rows = table.find_all('tr')
-        for row in rows:
+    for table in tables:
+        for row in table.find_all('tr'):
             cells = row.find_all(['th', 'td'])
-            
-            if len(cells) >= 2:
-                first_col = cells[0].text.strip()
-                
-                # දිනයක්දැයි හඳුනාගැනීම
-                has_numbers = any(char.isdigit() for char in first_col)
-                invalid_words = ['Rs', 'Ounce', 'Gram', 'Carat', 'Price', 'Date']
-                is_invalid = any(word in first_col for word in invalid_words)
-                
-                if has_numbers and not is_invalid and len(first_col) <= 20:
-                    date_text = first_col
-                    
-                    prices = []
-                    for cell in cells[1:]:
-                        # දෝෂය නිවැරදි කළ තැන: 'Rs.', 'Rs' සහ කොමා ඉවත් කර පිරිසිදු කිරීම
-                        cell_text = cell.text.replace('Rs.', '').replace('Rs', '').replace(',', '').strip()
-                        clean_str = cell_text.split('.')[0] 
-                        clean_num = re.sub(r'[^\d]', '', clean_str)
-                        
-                        if clean_num:
-                            prices.append(int(clean_num))
-                    
-                    if len(prices) >= 2:
-                        print(f"Date: {date_text} | Extracted Prices: {prices}")
-                        
-                        p_24k_1g = 0
-                        p_22k_8g = 0
-                        
-                        # මිල අනුව කාණ්ඩ කිරීම
-                        gram_prices = [p for p in prices if 10000 < p < 85000]
-                        pawn_prices = [p for p in prices if p > 100000]
-                        
-                        if gram_prices:
-                            p_24k_1g = max(gram_prices) 
-                        if pawn_prices:
-                            p_22k_8g = min(pawn_prices) 
-                        
-                        if p_24k_1g > 0 and p_22k_8g > 0:
-                            scraped_data[date_text] = {
-                                "price_24k_1g": p_24k_1g,
-                                "price_22k_8g": p_22k_8g
-                            }
+            if len(cells) >= 5:
+                date_text = cells[0].text.strip()
+                if re.match(r"^\d{4}-\d{2}-\d{2}$", date_text):
+                    p24k = int(re.sub(r'[^\d]', '', cells[2].text.split('.')[0]))
+                    p22k = int(re.sub(r'[^\d]', '', cells[4].text.split('.')[0]))
+                    if p24k > 10000: scraped_data[date_text] = {"price_24k_1g": p24k, "price_22k_8g": p22k}
 
-    print(f"\nTotal Valid Records Scraped: {len(scraped_data)}")
-
+    # දත්ත ගොනුව කියවීම
     file_path = 'data.json'
     existing_data = []
-    
     if os.path.exists(file_path):
-        with open(file_path, 'r') as file:
+        with open(file_path, 'r') as f:
             try:
-                existing_data = json.load(file)
-            except:
-                pass
+                db = json.load(f)
+                existing_data = db.get("history", [])
+            except: pass
 
-    merged_dict = {}
-    for item in existing_data:
-        merged_dict[item["date"]] = {
-            "price_24k_1g": item.get("price_24k_1g", 0),
-            "price_22k_8g": item.get("price_22k_8g", item.get("price", 0))
-        }
+    # දත්ත ඒකාබද්ධ කිරීම
+    merged = {item["date"]: {"price_24k_1g": item["price_24k_1g"], "price_22k_8g": item["price_22k_8g"]} for item in existing_data}
+    for d, p in scraped_data.items(): merged[d] = p
     
-    for date, prices in scraped_data.items():
-        merged_dict[date] = prices
+    sorted_dates = sorted(merged.keys())
+    history = [{"date": k, **merged[k]} for k in sorted_dates]
 
-    sorted_dates = sorted(merged_dict.keys())
+    # --- 🔮 දින 5ක අනාවැකිය ගණනය කිරීම ---
+    sentiment_factor = get_news_sentiment()
+    last_p22k = history[-1]["price_22k_8g"]
+    last_p24k = history[-1]["price_24k_1g"]
     
-    final_data = []
-    for k in sorted_dates:
-        if merged_dict[k]["price_24k_1g"] > 0 and merged_dict[k]["price_22k_8g"] > 0:
-            final_data.append({
-                "date": k,
-                "price_24k_1g": merged_dict[k]["price_24k_1g"],
-                "price_22k_8g": merged_dict[k]["price_22k_8g"]
-            })
+    forecast = []
+    current_p22k, current_p24k = last_p22k, last_p24k
+    
+    for i in range(1, 6):
+        # සරල ගණිතමය ක්‍රමයක් + පුවත් බලපෑම
+        current_p22k = int(current_p22k * (1 + sentiment_factor))
+        current_p24k = int(current_p24k * (1 + sentiment_factor))
+        
+        forecast_date = (datetime.datetime.now() + datetime.timedelta(days=i)).strftime("%Y-%m-%d")
+        forecast.append({
+            "date": forecast_date,
+            "price_22k_8g": current_p22k,
+            "price_24k_1g": current_p24k
+        })
 
-    with open(file_path, 'w') as file:
-        json.dump(final_data, file, indent=4)
+    # අවසාන JSON එක සෑදීම
+    output = {
+        "last_updated": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "market_sentiment": "Bullish" if sentiment_factor > 0 else "Bearish" if sentiment_factor < 0 else "Neutral",
+        "history": history,
+        "forecast": forecast
+    }
 
-    print(f"Successfully saved {len(final_data)} records to data.json")
-    print("--- SCRAPER FINISHED ---")
+    with open(file_path, 'w') as f:
+        json.dump(output, f, indent=4)
+    print("--- SCRAPING COMPLETED ---")
 
 except Exception as e:
-    print(f"CRITICAL ERROR: {e}")
+    print(f"Error: {e}")
