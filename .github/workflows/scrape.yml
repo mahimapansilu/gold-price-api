@@ -2,9 +2,8 @@ name: Daily Gold Price Scraper
 
 on:
   schedule:
-    # මේක හැමදාම ලංකාවේ වෙලාවෙන් උදේ 9:30 ට run වෙනවා (UTC 4:00)
-    - cron: '0 4 * * *' 
-  workflow_dispatch: # අපිට ඕන වෙලාවක manual run කරන්නත් මේකෙන් පුළුවන්
+    - cron: '0 4,8,16 * * *'  # දවසට 3 පාරක් (9:30 AM, 1:30 PM, 9:30 PM)
+  workflow_dispatch:          # අතින් Run කිරීමට ඇති හැකියාව
 
 jobs:
   scrape-and-update:
