@@ -1,16 +1,14 @@
-name: Daily Gold Price Scraper
+name: Daily Gold Price Scraper and Analyzer
 
 on:
   schedule:
-    - cron: '0 4,8,16 * * *'  # දවසට 3 පාරක් (9:30 AM, 1:30 PM, 9:30 PM)
-  workflow_dispatch:          # අතින් Run කිරීමට ඇති හැකියාව
+    # ලංකාවේ වෙලාවෙන් උදේ 9:30, දවල් 1:30 සහ රෑ 9:30 ට (UTC 4, 8, 16)
+    - cron: '0 4,8,16 * * *'
+  workflow_dispatch: # ඕනෑම වෙලාවක අතින් (Manual) run කිරීමට
 
 jobs:
-  scrape-and-update:
+  build:
     runs-on: ubuntu-latest
-    
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout Repository
@@ -19,22 +17,23 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.9'
 
       - name: Install Dependencies
         run: |
-          pip install requests beautifulsoup4
+          pip install requests beautifulsoup4 lxml
 
-     - name: Run Scraper
+      - name: Run Gold Scraper
         run: python scraper.py
 
-      - name: Run Analyzer
+      - name: Run AI Analyzer
         run: python analyzer.py
 
-      - name: Commit and Push
+      - name: Commit and Push Changes
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "action@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data.json analysis.json
-          git commit -m "Update prices and analysis"
+          # වෙනසක් තිබේ නම් පමණක් commit කරන්න (error වැළැක්වීමට)
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update gold prices and AI analysis [skip ci]"
           git push
