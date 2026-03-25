@@ -1,32 +1,32 @@
 {
-    "last_updated": "2026-03-25 03:22",
+    "last_updated": "2026-03-25 05:26",
     "sentiment": "Neutral (\u0dc3\u0dca\u0dae\u0dcf\u0dba\u0dd3 \u0db8\u0da7\u0dca\u0da7\u0db8\u0d9a)",
     "news": [],
     "forecast": [
         {
             "date": "2026-03-26",
-            "price_22k_8g": 338000,
-            "price_24k_1g": 46090
+            "price_22k_8g": 350400,
+            "price_24k_1g": 47780
         },
         {
             "date": "2026-03-27",
-            "price_22k_8g": 338000,
-            "price_24k_1g": 46090
+            "price_22k_8g": 350400,
+            "price_24k_1g": 47780
         },
         {
             "date": "2026-03-28",
-            "price_22k_8g": 338000,
-            "price_24k_1g": 46090
+            "price_22k_8g": 350400,
+            "price_24k_1g": 47780
         },
         {
             "date": "2026-03-29",
-            "price_22k_8g": 338000,
-            "price_24k_1g": 46090
+            "price_22k_8g": 350400,
+            "price_24k_1g": 47780
         },
         {
             "date": "2026-03-30",
-            "price_22k_8g": 338000,
-            "price_24k_1g": 46090
+            "price_22k_8g": 350400,
+            "price_24k_1g": 47780
         }
     ]
 }
