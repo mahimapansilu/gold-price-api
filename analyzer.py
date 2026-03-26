@@ -3,45 +3,61 @@ import os
 import requests
 from bs4 import BeautifulSoup
 import datetime
+import urllib.request
 
 def get_market_data():
     """ලෝක පුවත් කියවා Trend එක සහ පුවත් සිරස්තල ලබා ගනී"""
     sentiment = 0
     news_headlines = []
+    
+    # Block වීම වළක්වා ගැනීමට ශක්තිමත් User-Agent එකක්
+    req_headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    }
+
     try:
-        # හරියටම රත්‍රන් මිලට පමණක් අදාළ Google News ලබා ගැනීම
-        url = "https://news.google.com/rss/search?q=gold+price&hl=en-US&gl=US&ceid=US:en"
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-        }
-        resp = requests.get(url, headers=headers, timeout=15)
+        # RSS වෙනුවට කෙලින්ම News Page එක Scrape කිරීම (Kitco News Page)
+        url = "https://www.kitco.com/news/category/commodities/gold"
         
-        soup = BeautifulSoup(resp.content, 'xml')
-        items = soup.find_all('item')
+        # Requests ලයිබ්‍රරිය වෙනුවට urllib පාවිච්චි කිරීම සමහර බ්ලොක් මගහරියි
+        req = urllib.request.Request(url, headers=req_headers)
+        html = urllib.request.urlopen(req, timeout=15).read()
+        soup = BeautifulSoup(html, 'html.parser')
         
-        # ප්‍රධාන පුවත් 5
-        for item in items[:5]:
-            title = item.find('title').text.strip()
-            # Google News වල අගට එන News Channel එකේ නම අයින් කිරීම (පැහැදිලි බව සඳහා)
-            if " - " in title:
-                title = title.rsplit(" - ", 1)[0]
-            news_headlines.append(title)
+        # Kitco අලුත් layout එකේ ප්‍රවෘත්ති සිරස්තල හොයාගැනීම
+        # සාමාන්‍යයෙන් h2 හෝ h3 tags ඇතුලේ මේවා තියෙනවා
+        headlines = soup.find_all(['h2', 'h3'])
         
-        text = " ".join([t.lower() for t in news_headlines])
+        for h in headlines:
+            text = h.text.strip()
+            # හිස් නැති, සහ ප්‍රමාණවත් දිගක් තියෙන (සැබෑ පුවත්) සිරස්තල පමණක්
+            if text and len(text) > 20 and "Gold" in text.title() or "Price" in text.title():
+                if text not in news_headlines: # Duplicate මගහැරීම
+                    news_headlines.append(text)
+            if len(news_headlines) >= 5: # ප්‍රධාන පුවත් 5ක් ඇති
+                break
+                
+        # අහම්බෙන් හරි පුවත් ආවේ නැත්නම්
+        if not news_headlines:
+             news_headlines = ["ලෝක රත්‍රන් වෙළඳපොළේ සුවිශේෂී පුවත් අද දින වාර්තා වී නොමැත."]
+
+        # Sentiment ගණනය කිරීම
+        full_text = " ".join([t.lower() for t in news_headlines])
         
-        pos_words = ['rise', 'high', 'jump', 'bullish', 'increase', 'gain', 'strong', 'up', 'soar', 'record', 'buy']
-        neg_words = ['fall', 'low', 'drop', 'bearish', 'decrease', 'loss', 'weak', 'down', 'crash', 'sell', 'plunge']
+        pos_words = ['rise', 'high', 'jump', 'bullish', 'increase', 'gain', 'strong', 'up', 'soar', 'record', 'buy', 'rally']
+        neg_words = ['fall', 'low', 'drop', 'bearish', 'decrease', 'loss', 'weak', 'down', 'crash', 'sell', 'plunge', 'dip']
         
-        pos_score = sum(text.count(word) for word in pos_words)
-        neg_score = sum(text.count(word) for word in neg_words)
+        pos_score = sum(full_text.count(word) for word in pos_words)
+        neg_score = sum(full_text.count(word) for word in neg_words)
         
-        # ඉතා කුඩා අගයක් ලබා දෙමු (එවිට News වලින් Trend එක Over-power නොකරයි)
+        # සුළු බලපෑමක් (Trend එක over-power නොකිරීමට)
         if pos_score > neg_score: sentiment = 0.0005  
         elif neg_score > pos_score: sentiment = -0.0005 
         
     except Exception as e:
         print(f"News Analysis Error: {e}")
-        news_headlines = ["ලෝක රත්‍රන් වෙළඳපොළ පුවත් ලබාගැනීම ප්‍රමාද වී ඇත."]
+        news_headlines = ["දැනට ලෝක වෙළඳපොළ පුවත් ලබාගැනීම තාවකාලිකව ඇනහිට ඇත."]
         sentiment = 0 
         
     return sentiment, news_headlines
@@ -49,6 +65,7 @@ def get_market_data():
 def run_analysis():
     try:
         if not os.path.exists('data.json'):
+            print("Error: data.json not found")
             return
 
         with open('data.json', 'r') as f:
@@ -56,7 +73,9 @@ def run_analysis():
 
         history = data.get("history", data) if isinstance(data, dict) else data
 
-        if not history or len(history) < 2: return
+        if not history or len(history) < 2: 
+            print("Not enough history")
+            return
 
         # අවසන් දින 2
         last_entry = history[-1]
@@ -76,7 +95,7 @@ def run_analysis():
         reason = ""
         status = ""
         
-        # 💡 Trend එක සහ News එක ගැලපෙන ආකාරය අනුව නිවැරදි හේතුවක් දීම
+        # Trend එක සහ News එක ගැලපෙන ආකාරය අනුව නිවැරදි හේතුවක් දීම
         if trend_diff < 0 and sentiment <= 0:
             status = "Bearish (පහළ යෑමේ ප්‍රවණතාවයක්)"
             reason = "පසුගිය දිනවල දේශීය වෙළඳපොලේ රත්‍රන් මිලෙහි පැහැදිලි අඩුවීමක් දක්නට ලැබෙන අතර, ලෝක පුවත් ද මීට සමානුපාතිකව පවතී. මේ හේතුවෙන් ඉදිරි දිනවලද මිල පහළ යනු ඇතැයි අපේක්ෂා කෙරේ."
@@ -116,9 +135,6 @@ def run_analysis():
                 "price_22k_8g": int(curr_22),
                 "price_24k_1g": int(curr_24)
             })
-
-        if len(news_list) == 0:
-             news_list = ["නවතම ලෝක පුවත් තවමත් යාවත්කාලීන වී නොමැත."]
 
         result = {
             "last_updated": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
