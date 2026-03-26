@@ -1,39 +1,35 @@
 {
-    "last_updated": "2026-03-26 04:34",
-    "sentiment": "Slightly Bearish (සුළු පහළ යෑමක්)",
-    "reason": "පසුගිය දින කිහිපය තුළ දේශීය හා ජාත්‍යන්තර වෙළඳපොලේ දක්නට ලැබෙන සුළු පසුබෑම (Correction) හේතුවෙන් මිලෙහි මෙම අඩුවීම අපේක්ෂා කෙරේ. ආයෝජකයින් ලාභ ලැබීම සඳහා රත්‍රන් විකිණීම මීට හේතු විය හැක.",
+    "last_updated": "2026-03-26 04:40",
+    "sentiment": "Bearish (පහළ යෑමේ ප්‍රවණතාවයක්)",
+    "reason": "පසුගිය දිනවල දේශීය වෙළඳපොලේ රත්‍රන් මිලෙහි පැහැදිලි අඩුවීමක් දක්නට ලැබෙන අතර, ලෝක පුවත් ද මීට සමානුපාතිකව පවතී. මේ හේතුවෙන් ඉදිරි දිනවලද මිල පහළ යනු ඇතැයි අපේක්ෂා කෙරේ.",
     "news": [
-        "Orezone Gold Corp (ORZCF) Q4 2025 Earnings Call Highlights: Record Net Income and Strategic ...",
-        "Couloir Capital Is Pleased to Announce That It Has Updated Its Research Coverage on Abcourt Mines",
-        "These Stocks Are Today’s Movers: Arm, Intel, AMD, Firefly Aerospace, Robinhood, JD.com, Sarepta, and More",
-        "Franklin Templeton Launches ETFs That Trade In Crypto Wallets 24/7",
-        "Newmont Corporation (NEM) Outperforms Broader Market: What You Need to Know"
+        "ලෝක රත්‍රන් වෙළඳපොළ පුවත් ලබාගැනීම ප්‍රමාද වී ඇත."
     ],
     "forecast": [
         {
             "date": "2026-03-27",
-            "price_22k_8g": 347663,
-            "price_24k_1g": 47406
+            "price_22k_8g": 345120,
+            "price_24k_1g": 47060
         },
         {
             "date": "2026-03-28",
-            "price_22k_8g": 348229,
-            "price_24k_1g": 47483
+            "price_22k_8g": 343932,
+            "price_24k_1g": 46898
         },
         {
             "date": "2026-03-29",
-            "price_22k_8g": 348796,
-            "price_24k_1g": 47561
+            "price_22k_8g": 343219,
+            "price_24k_1g": 46800
         },
         {
             "date": "2026-03-30",
-            "price_22k_8g": 349367,
-            "price_24k_1g": 47639
+            "price_22k_8g": 342791,
+            "price_24k_1g": 46742
         },
         {
             "date": "2026-03-31",
-            "price_22k_8g": 349939,
-            "price_24k_1g": 47717
+            "price_22k_8g": 342534,
+            "price_24k_1g": 46707
         }
     ]
 }
