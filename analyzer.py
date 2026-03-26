@@ -1,57 +1,41 @@
 import json
 import os
-import requests
-from bs4 import BeautifulSoup
 import datetime
 import urllib.request
+import xml.etree.ElementTree as ET
 
 def get_market_data():
     """ලෝක පුවත් කියවා Trend එක සහ පුවත් සිරස්තල ලබා ගනී"""
     sentiment = 0
     news_headlines = []
     
-    # Block වීම වළක්වා ගැනීමට ශක්තිමත් User-Agent එකක්
-    req_headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
-    }
-
     try:
-        # RSS වෙනුවට කෙලින්ම News Page එක Scrape කිරීම (Kitco News Page)
-        url = "https://www.kitco.com/news/category/commodities/gold"
+        # Google News RSS හරහා අලුත්ම ක්‍රමයට දත්ත ලබා ගැනීම (Block වීම අවමයි)
+        url = "https://news.google.com/rss/search?q=gold+market+price&hl=en-US&gl=US&ceid=US:en"
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        response = urllib.request.urlopen(req, timeout=15)
+        xml_data = response.read()
         
-        # Requests ලයිබ්‍රරිය වෙනුවට urllib පාවිච්චි කිරීම සමහර බ්ලොක් මගහරියි
-        req = urllib.request.Request(url, headers=req_headers)
-        html = urllib.request.urlopen(req, timeout=15).read()
-        soup = BeautifulSoup(html, 'html.parser')
+        # XML දත්ත නිවැරදිව කියවීම
+        root = ET.fromstring(xml_data)
         
-        # Kitco අලුත් layout එකේ ප්‍රවෘත්ති සිරස්තල හොයාගැනීම
-        # සාමාන්‍යයෙන් h2 හෝ h3 tags ඇතුලේ මේවා තියෙනවා
-        headlines = soup.find_all(['h2', 'h3'])
-        
-        for h in headlines:
-            text = h.text.strip()
-            # හිස් නැති, සහ ප්‍රමාණවත් දිගක් තියෙන (සැබෑ පුවත්) සිරස්තල පමණක්
-            if text and len(text) > 20 and "Gold" in text.title() or "Price" in text.title():
-                if text not in news_headlines: # Duplicate මගහැරීම
-                    news_headlines.append(text)
-            if len(news_headlines) >= 5: # ප්‍රධාන පුවත් 5ක් ඇති
-                break
-                
-        # අහම්බෙන් හරි පුවත් ආවේ නැත්නම්
+        for item in root.findall('.//item')[:5]:
+            title = item.find('title').text
+            if " - " in title:
+                title = title.rsplit(" - ", 1)[0]
+            news_headlines.append(title.strip())
+            
         if not news_headlines:
              news_headlines = ["ලෝක රත්‍රන් වෙළඳපොළේ සුවිශේෂී පුවත් අද දින වාර්තා වී නොමැත."]
 
-        # Sentiment ගණනය කිරීම
         full_text = " ".join([t.lower() for t in news_headlines])
         
-        pos_words = ['rise', 'high', 'jump', 'bullish', 'increase', 'gain', 'strong', 'up', 'soar', 'record', 'buy', 'rally']
-        neg_words = ['fall', 'low', 'drop', 'bearish', 'decrease', 'loss', 'weak', 'down', 'crash', 'sell', 'plunge', 'dip']
+        pos_words = ['rise', 'high', 'jump', 'bullish', 'increase', 'gain', 'strong', 'up', 'soar', 'record', 'buy']
+        neg_words = ['fall', 'low', 'drop', 'bearish', 'decrease', 'loss', 'weak', 'down', 'crash', 'sell']
         
         pos_score = sum(full_text.count(word) for word in pos_words)
         neg_score = sum(full_text.count(word) for word in neg_words)
         
-        # සුළු බලපෑමක් (Trend එක over-power නොකිරීමට)
         if pos_score > neg_score: sentiment = 0.0005  
         elif neg_score > pos_score: sentiment = -0.0005 
         
@@ -64,20 +48,15 @@ def get_market_data():
 
 def run_analysis():
     try:
-        if not os.path.exists('data.json'):
-            print("Error: data.json not found")
-            return
+        if not os.path.exists('data.json'): return
 
         with open('data.json', 'r') as f:
             data = json.load(f)
 
         history = data.get("history", data) if isinstance(data, dict) else data
 
-        if not history or len(history) < 2: 
-            print("Not enough history")
-            return
+        if not history or len(history) < 2: return
 
-        # අවසන් දින 2
         last_entry = history[-1]
         prev_entry = history[-2]
         
@@ -88,14 +67,13 @@ def run_analysis():
         initial_24 = curr_24
         initial_22 = curr_22
 
-        trend_diff = curr_22 - prev_22 # ඇත්තටම දින දෙක අතර මිල වෙනස
+        trend_diff = curr_22 - prev_22 
         
         sentiment, news_list = get_market_data()
         
         reason = ""
         status = ""
         
-        # Trend එක සහ News එක ගැලපෙන ආකාරය අනුව නිවැරදි හේතුවක් දීම
         if trend_diff < 0 and sentiment <= 0:
             status = "Bearish (පහළ යෑමේ ප්‍රවණතාවයක්)"
             reason = "පසුගිය දිනවල දේශීය වෙළඳපොලේ රත්‍රන් මිලෙහි පැහැදිලි අඩුවීමක් දක්නට ලැබෙන අතර, ලෝක පුවත් ද මීට සමානුපාතිකව පවතී. මේ හේතුවෙන් ඉදිරි දිනවලද මිල පහළ යනු ඇතැයි අපේක්ෂා කෙරේ."
@@ -115,12 +93,8 @@ def run_analysis():
         forecast = []
         current_trend = trend_diff
 
-        # අනාගත දින 5 සඳහා Prediction ගණනය කිරීම
         for i in range(1, 6):
-            # දිනෙන් දින Trend එකේ වේගය අඩු කිරීම (Curve එකක් සෑදීමට)
             current_trend = current_trend * 0.6 
-            
-            # News වල බලපෑම ඉතා සුළු වශයෙන් එකතු කිරීම
             sentiment_push = curr_22 * sentiment
             
             daily_change_22 = current_trend + sentiment_push
@@ -146,8 +120,6 @@ def run_analysis():
 
         with open('analysis.json', 'w', encoding='utf-8') as f:
             json.dump(result, f, indent=4, ensure_ascii=False)
-            
-        print("Analysis and News fetched successfully!")
 
     except Exception as e:
         print(f"Main Analysis Error: {e}")
