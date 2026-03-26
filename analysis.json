@@ -1,32 +1,35 @@
 {
-    "last_updated": "2026-03-25 17:13",
-    "sentiment": "Neutral (\u0dc3\u0dca\u0dae\u0dcf\u0dba\u0dd3 \u0db8\u0da7\u0dca\u0da7\u0db8\u0d9a)",
-    "news": [],
+    "last_updated": "2026-03-26 04:29",
+    "sentiment": "Slightly Bearish (\u0dc3\u0dd4\u0dc5\u0dd4 \u0db4\u0dc4\u0dc5 \u0dba\u0dd1\u0db8\u0d9a\u0dca)",
+    "reason": "\u0dbd\u0ddd\u0d9a \u0db4\u0dd4\u0dc0\u0dad\u0dca \u0dc0\u0dbd \u0dc0\u0dd2\u0dc1\u0dcf\u0dbd \u0db6\u0dbd\u0db4\u0dd1\u0db8\u0d9a\u0dca \u0db1\u0ddc\u0db8\u0dd0\u0dad\u0dd2 \u0dc0\u0dd4\u0dc0\u0daf, \u0daf\u0dda\u0dc1\u0dd3\u0dba \u0dc0\u0dd9\u0dc5\u0db3\u0db4\u0ddc\u0dbd\u0dda \u0db8\u0dd2\u0dbd \u0d85\u0da9\u0dd4\u0dc0\u0dd3\u0db8\u0dda \u0db4\u0dca\u200d\u0dbb\u0dc0\u0dab\u0dad\u0dcf\u0dc0\u0dba\u0d9a\u0dca \u0db4\u0dc0\u0dad\u0dd2\u0db1 \u0db6\u0dd0\u0dc0\u0dd2\u0db1\u0dca \u0db8\u0dd2\u0dbd \u0dad\u0dc0\u0daf\u0dd4\u0dbb\u0da7\u0dad\u0dca \u0db4\u0dc4\u0dc5 \u0dba\u0dcf \u0dc4\u0dd0\u0d9a.",
+    "news": [
+        "\u0dbd\u0ddd\u0d9a \u0dbb\u0dad\u0dca\u200d\u0dbb\u0db1\u0dca \u0dc0\u0dd9\u0dc5\u0db3\u0db4\u0ddc\u0dc5 \u0db4\u0dd4\u0dc0\u0dad\u0dca \u0dbd\u0db6\u0dcf\u0d9c\u0dd0\u0db1\u0dd3\u0db8 \u0dad\u0dcf\u0dc0\u0d9a\u0dcf\u0dbd\u0dd2\u0d9a\u0dc0 \u0d87\u0db1\u0dc4\u0dd2\u0da7 \u0d87\u0dad."
+    ],
     "forecast": [
         {
-            "date": "2026-03-26",
-            "price_22k_8g": 350400,
-            "price_24k_1g": 47780
-        },
-        {
             "date": "2026-03-27",
-            "price_22k_8g": 350400,
-            "price_24k_1g": 47780
+            "price_22k_8g": 346110,
+            "price_24k_1g": 47195
         },
         {
             "date": "2026-03-28",
-            "price_22k_8g": 350400,
-            "price_24k_1g": 47780
+            "price_22k_8g": 345120,
+            "price_24k_1g": 47060
         },
         {
             "date": "2026-03-29",
-            "price_22k_8g": 350400,
-            "price_24k_1g": 47780
+            "price_22k_8g": 344130,
+            "price_24k_1g": 46925
         },
         {
             "date": "2026-03-30",
-            "price_22k_8g": 350400,
-            "price_24k_1g": 47780
+            "price_22k_8g": 343140,
+            "price_24k_1g": 46790
+        },
+        {
+            "date": "2026-03-31",
+            "price_22k_8g": 342150,
+            "price_24k_1g": 46655
         }
     ]
 }
