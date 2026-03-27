@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-03-26 17:13",
+    "last_updated": "2026-03-27 05:46",
     "sentiment": "Bearish (පහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "පසුගිය දිනවල දේශීය වෙළඳපොලේ රත්‍රන් මිලෙහි පැහැදිලි අඩුවීමක් දක්නට ලැබෙන අතර, ලෝක පුවත් ද මීට සමානුපාතිකව පවතී. මේ හේතුවෙන් ඉදිරි දිනවලද මිල පහළ යනු ඇතැයි අපේක්ෂා කෙරේ.",
     "news": [
         "Current price of gold as of March 26, 2026",
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
         "Gold Price Today | Price of Gold Per Ounce | Gold Spot Price Charts",
-        "Why is gold price down by 2% and silver by 4.2%, and will precious metals continue to drop or rise again?",
-        "Gold prices are steady after heavy sell-off"
+        "Gold prices are steady after heavy sell-off",
+        "Tokenized Gold Is Creating a 24/7 Market (And Driving Weekend Price Moves)"
     ],
     "forecast": [
         {
-            "date": "2026-03-27",
-            "price_22k_8g": 344946,
-            "price_24k_1g": 47036
-        },
-        {
             "date": "2026-03-28",
-            "price_22k_8g": 343585,
-            "price_24k_1g": 46850
+            "price_22k_8g": 340368,
+            "price_24k_1g": 46411
         },
         {
             "date": "2026-03-29",
-            "price_22k_8g": 342701,
-            "price_24k_1g": 46730
+            "price_22k_8g": 338722,
+            "price_24k_1g": 46186
         },
         {
             "date": "2026-03-30",
-            "price_22k_8g": 342102,
-            "price_24k_1g": 46648
+            "price_22k_8g": 337667,
+            "price_24k_1g": 46042
         },
         {
             "date": "2026-03-31",
-            "price_22k_8g": 341674,
-            "price_24k_1g": 46590
+            "price_22k_8g": 336967,
+            "price_24k_1g": 45947
+        },
+        {
+            "date": "2026-04-01",
+            "price_22k_8g": 336479,
+            "price_24k_1g": 45880
         }
     ]
 }
