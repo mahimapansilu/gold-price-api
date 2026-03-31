@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-03-31 05:48",
+    "last_updated": "2026-03-31 09:11",
     "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
     "news": [
         "Current price of gold as of March 30, 2026",
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
-        "Gold and silver slide: Has the Iran war reversed safe-haven demand?",
+        "Gold on track for worst month since 2008 as Iran war enters its fifth week",
         "Gold market analysis for March 30 - key intra-day price entry levels for active traders",
-        "Dip-Buyers Arrive to Pull Gold Back From Brink of a Bear Market"
+        "Silver Price Floor: Why the Market Has Reset to $70"
     ],
     "forecast": [
         {
             "date": "2026-04-01",
-            "price_22k_8g": 354325,
-            "price_24k_1g": 48313
+            "price_22k_8g": 354150,
+            "price_24k_1g": 48289
         },
         {
             "date": "2026-04-02",
-            "price_22k_8g": 356482,
-            "price_24k_1g": 48608
+            "price_22k_8g": 356130,
+            "price_24k_1g": 48559
         },
         {
             "date": "2026-04-03",
-            "price_22k_8g": 357848,
-            "price_24k_1g": 48794
+            "price_22k_8g": 357318,
+            "price_24k_1g": 48721
         },
         {
             "date": "2026-04-04",
-            "price_22k_8g": 358740,
-            "price_24k_1g": 48915
+            "price_22k_8g": 358030,
+            "price_24k_1g": 48819
         },
         {
             "date": "2026-04-05",
-            "price_22k_8g": 359347,
-            "price_24k_1g": 48998
+            "price_22k_8g": 358458,
+            "price_24k_1g": 48877
         }
     ]
 }
