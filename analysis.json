@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-04-18 16:52",
+    "last_updated": "2026-04-19 06:04",
     "sentiment": "Slightly Bearish (මිලෙහි සුළු පසුබෑමක්)",
     "reason": "ලෝක වෙළඳපොලේ ධනාත්මක පුවත් පැවතියද, දේශීය වෙළඳපොලේ පසුගිය දිනවල දක්නට ලැබුණු මිල අඩුවීමේ ප්‍රවණතාවය (Correction) තවදුරටත් සුළු වශයෙන් බලපෑම් කළ හැක.",
     "news": [
-        "Gold Price Today | Price of Gold Per Ounce | Gold Spot Price Charts",
+        "Current price of gold: Month Day, Year",
         "Gold Price Today: April 16, 2026",
         "Copper and Gold Market Outlook 2026: Prices, Supply and Mining Costs",
-        "Gold Price Forecast 2026–2027: Key Predictions from Top Analysts",
-        "Gold and silver prices today, Friday, April 17: Prices holding steady after ceasefire announcement"
+        "Gold and silver prices today, Friday, April 17: Prices holding steady after ceasefire announcement",
+        "Wall Street predicts higher gold prices following regional ceasefire as domestic data and Fed chair confirmation take center stage next week"
     ],
     "forecast": [
         {
-            "date": "2026-04-19",
+            "date": "2026-04-20",
             "price_22k_8g": 360190,
             "price_24k_1g": 49110
         },
         {
-            "date": "2026-04-20",
+            "date": "2026-04-21",
             "price_22k_8g": 359956,
             "price_24k_1g": 49078
         },
         {
-            "date": "2026-04-21",
+            "date": "2026-04-22",
             "price_22k_8g": 359888,
             "price_24k_1g": 49069
         },
         {
-            "date": "2026-04-22",
+            "date": "2026-04-23",
             "price_22k_8g": 359918,
             "price_24k_1g": 49073
         },
         {
-            "date": "2026-04-23",
+            "date": "2026-04-24",
             "price_22k_8g": 360009,
             "price_24k_1g": 49085
         }
