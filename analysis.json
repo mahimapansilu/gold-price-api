@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-04-23 09:51",
+    "last_updated": "2026-04-23 17:39",
     "sentiment": "Bearish (පහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "පසුගිය දිනවල දේශීය වෙළඳපොලේ රත්‍රන් මිලෙහි පැහැදිලි අඩුවීමක් දක්නට ලැබෙන අතර, ලෝක පුවත් ද මීට සමානුපාතිකව පවතී. මේ හේතුවෙන් ඉදිරි දිනවලද මිල පහළ යනු ඇතැයි අපේක්ෂා කෙරේ.",
     "news": [
+        "Gold price modestly down, silver solidly lower on bearish outside-market forces",
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
-        "Gold market analysis for April 22 - key intra-day price entry levels for active traders",
+        "Gold Price Today | Price of Gold Per Ounce | Gold Spot Price Charts",
         "Will gold reach $6,000 this year? Experts weigh in on gold prices.",
-        "What Drives Gold Prices? 5 Forces Investors Are Watching Now",
-        "Current price of gold as of April 21, 2026"
+        "Gold News: Strong Dollar and Oil Spike Pressure Gold Price Outlook"
     ],
     "forecast": [
         {
             "date": "2026-04-24",
-            "price_22k_8g": 357060,
-            "price_24k_1g": 48685
+            "price_22k_8g": 356880,
+            "price_24k_1g": 48660
         },
         {
             "date": "2026-04-25",
-            "price_22k_8g": 356466,
-            "price_24k_1g": 48604
-        },
-        {
-            "date": "2026-04-26",
-            "price_22k_8g": 356109,
+            "price_22k_8g": 356108,
             "price_24k_1g": 48555
         },
         {
+            "date": "2026-04-26",
+            "price_22k_8g": 355574,
+            "price_24k_1g": 48482
+        },
+        {
             "date": "2026-04-27",
-            "price_22k_8g": 355895,
-            "price_24k_1g": 48526
+            "price_22k_8g": 355182,
+            "price_24k_1g": 48429
         },
         {
             "date": "2026-04-28",
-            "price_22k_8g": 355767,
-            "price_24k_1g": 48508
+            "price_22k_8g": 354876,
+            "price_24k_1g": 48387
         }
     ]
 }
