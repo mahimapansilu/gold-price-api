@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-04-27 06:35",
-    "sentiment": "Slightly Bullish (මිලෙහි සුළු වර්ධනයක්)",
-    "reason": "ලෝක වෙළඳපොලේ තරමක පසුබෑමක් ගැන පුවත් පළ වුවද, දේශීයව පවතින ඉල්ලුම නිසා මිලෙහි යම් සුළු වර්ධනයක් පවත්වා ගනු ඇතැයි අනුමාන කෙරේ.",
+    "last_updated": "2026-04-27 10:24",
+    "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
+    "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
     "news": [
         "What is the price of gold today?",
         "Gold Price Today: April 24, 2026",
         "Current price of gold as of April 24, 2026",
         "Gold gains but heads for first weekly loss in five weeks",
-        "Gold price modestly down, silver solidly lower on bearish outside-market forces"
+        "Gold Futures Overview"
     ],
     "forecast": [
         {
             "date": "2026-04-28",
-            "price_22k_8g": 358850,
-            "price_24k_1g": 48931
+            "price_22k_8g": 359030,
+            "price_24k_1g": 48956
         },
         {
             "date": "2026-04-29",
-            "price_22k_8g": 359139,
-            "price_24k_1g": 48971
+            "price_22k_8g": 359498,
+            "price_24k_1g": 49020
         },
         {
             "date": "2026-04-30",
-            "price_22k_8g": 359240,
-            "price_24k_1g": 48985
+            "price_22k_8g": 359778,
+            "price_24k_1g": 49058
         },
         {
             "date": "2026-05-01",
-            "price_22k_8g": 359229,
-            "price_24k_1g": 48983
+            "price_22k_8g": 359947,
+            "price_24k_1g": 49081
         },
         {
             "date": "2026-05-02",
-            "price_22k_8g": 359151,
-            "price_24k_1g": 48972
+            "price_22k_8g": 360048,
+            "price_24k_1g": 49095
         }
     ]
 }
