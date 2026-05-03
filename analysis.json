@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-05-02 16:59",
+    "last_updated": "2026-05-03 06:32",
     "sentiment": "Bearish (පහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "පසුගිය දිනවල දේශීය වෙළඳපොලේ රත්‍රන් මිලෙහි පැහැදිලි අඩුවීමක් දක්නට ලැබෙන අතර, ලෝක පුවත් ද මීට සමානුපාතිකව පවතී. මේ හේතුවෙන් ඉදිරි දිනවලද මිල පහළ යනු ඇතැයි අපේක්ෂා කෙරේ.",
     "news": [
         "Current price of gold as of April 30, 2026",
-        "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
-        "Gold Futures Overview",
+        "Gold up on dollar, oil price drop; headed for second straight monthly decline",
+        "Gold posts its biggest 2-month drop ever. How its price could still double over the next 5 years.",
         "What the Gold Price Per Ounce Really Tells You",
-        "Gold posts its biggest 2-month drop ever. How its price could still double over the next 5 years."
+        "How To Enter The Gold Market When The Price Of Gold Is This High"
     ],
     "forecast": [
         {
-            "date": "2026-05-03",
-            "price_22k_8g": 352543,
-            "price_24k_1g": 48070
-        },
-        {
             "date": "2026-05-04",
-            "price_22k_8g": 352079,
-            "price_24k_1g": 48007
+            "price_22k_8g": 352720,
+            "price_24k_1g": 48094
         },
         {
             "date": "2026-05-05",
-            "price_22k_8g": 351730,
-            "price_24k_1g": 47959
+            "price_22k_8g": 352432,
+            "price_24k_1g": 48055
         },
         {
             "date": "2026-05-06",
-            "price_22k_8g": 351450,
-            "price_24k_1g": 47921
+            "price_22k_8g": 352259,
+            "price_24k_1g": 48031
         },
         {
             "date": "2026-05-07",
-            "price_22k_8g": 351212,
-            "price_24k_1g": 47889
+            "price_22k_8g": 352155,
+            "price_24k_1g": 48017
+        },
+        {
+            "date": "2026-05-08",
+            "price_22k_8g": 352093,
+            "price_24k_1g": 48009
         }
     ]
 }
