@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-05-06 10:24",
+    "last_updated": "2026-05-06 17:47",
     "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
     "news": [
-        "Gold Price Forecast & Predictions for 2026, 2027, 2028–2030, 2040 and Beyond",
-        "Gold Price Today | Price of Gold Per Ounce | Gold Spot Price Charts",
-        "Gold price is attractive now, so don't wait to build a 3% to 8% position - NDR’s LaForge",
+        "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
+        "Gold prices holding solid gains as ADP says 109k jobs created in April",
         "Gold gains after hitting more than one-month low, Middle East risks linger",
-        "Gold Price Drops: Is This the Big Buying Opportunity?"
+        "Gold price jumps by Rs11,100 per tola in local market",
+        "Gold vs. Bitcoin - Market Capitalization | Gold | Collection"
     ],
     "forecast": [
         {
             "date": "2026-05-07",
-            "price_22k_8g": 358780,
-            "price_24k_1g": 48921
+            "price_22k_8g": 358958,
+            "price_24k_1g": 48946
         },
         {
             "date": "2026-05-08",
-            "price_22k_8g": 360328,
-            "price_24k_1g": 49132
+            "price_22k_8g": 360685,
+            "price_24k_1g": 49181
         },
         {
             "date": "2026-05-09",
-            "price_22k_8g": 361256,
-            "price_24k_1g": 49259
+            "price_22k_8g": 361794,
+            "price_24k_1g": 49332
         },
         {
             "date": "2026-05-10",
-            "price_22k_8g": 361814,
-            "price_24k_1g": 49335
+            "price_22k_8g": 362532,
+            "price_24k_1g": 49433
         },
         {
             "date": "2026-05-11",
-            "price_22k_8g": 362148,
-            "price_24k_1g": 49381
+            "price_22k_8g": 363048,
+            "price_24k_1g": 49503
         }
     ]
 }
