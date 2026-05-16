@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-05-15 17:48",
+    "last_updated": "2026-05-16 06:27",
     "sentiment": "Bearish (පහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "පසුගිය දිනවල දේශීය වෙළඳපොලේ රත්‍රන් මිලෙහි පැහැදිලි අඩුවීමක් දක්නට ලැබෙන අතර, ලෝක පුවත් ද මීට සමානුපාතිකව පවතී. මේ හේතුවෙන් ඉදිරි දිනවලද මිල පහළ යනු ඇතැයි අපේක්ෂා කෙරේ.",
     "news": [
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
-        "Gold Price Today | Price of Gold Per Ounce | Gold Spot Price Charts",
-        "Current price of gold as of May 14, 2026",
+        "Silver Price Today | Silver Spot Price Charts",
         "Gold price outlook: Will $6,000 happen this year?",
-        "Gold price falls back to $4,500 on heightened inflation fears"
+        "Gold breaks below $4,600 as dollar, yields overpower haven demand - Kitco AM Report",
+        "Gold Futures Overview"
     ],
     "forecast": [
         {
-            "date": "2026-05-16",
+            "date": "2026-05-17",
             "price_22k_8g": 356660,
             "price_24k_1g": 48631
         },
         {
-            "date": "2026-05-17",
+            "date": "2026-05-18",
             "price_22k_8g": 355366,
             "price_24k_1g": 48455
         },
         {
-            "date": "2026-05-18",
+            "date": "2026-05-19",
             "price_22k_8g": 354519,
             "price_24k_1g": 48339
         },
         {
-            "date": "2026-05-19",
+            "date": "2026-05-20",
             "price_22k_8g": 353940,
             "price_24k_1g": 48260
         },
         {
-            "date": "2026-05-20",
+            "date": "2026-05-21",
             "price_22k_8g": 353521,
             "price_24k_1g": 48203
         }
