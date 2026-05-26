@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-05-26 07:56",
+    "last_updated": "2026-05-26 18:33",
     "sentiment": "Bearish (පහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "පසුගිය දිනවල දේශීය වෙළඳපොලේ රත්‍රන් මිලෙහි පැහැදිලි අඩුවීමක් දක්නට ලැබෙන අතර, ලෝක පුවත් ද මීට සමානුපාතිකව පවතී. මේ හේතුවෙන් ඉදිරි දිනවලද මිල පහළ යනු ඇතැයි අපේක්ෂා කෙරේ.",
     "news": [
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
         "What is the price of gold today?",
-        "Gold slips as US-Iran tensions lift oil, stoke inflation fears",
-        "Gold Futures Overview",
-        "Iran News Sent Gold Price Both Ways. The Driver Was Never Iran."
+        "Gold falls as war-driven inflation fears fuel rate-hike bets",
+        "Gold falls as energy-driven inflation threatens to push interest rates higher",
+        "Gold and silver prices fall as Iran strikes revive oil risk - Kitco AM Report"
     ],
     "forecast": [
         {
             "date": "2026-05-27",
-            "price_22k_8g": 350120,
-            "price_24k_1g": 47740
+            "price_22k_8g": 349942,
+            "price_24k_1g": 47715
         },
         {
             "date": "2026-05-28",
-            "price_22k_8g": 346952,
-            "price_24k_1g": 47308
+            "price_22k_8g": 346599,
+            "price_24k_1g": 47259
         },
         {
             "date": "2026-05-29",
-            "price_22k_8g": 345051,
-            "price_24k_1g": 47048
+            "price_22k_8g": 344525,
+            "price_24k_1g": 46977
         },
         {
             "date": "2026-05-30",
-            "price_22k_8g": 343910,
-            "price_24k_1g": 46893
+            "price_22k_8g": 343212,
+            "price_24k_1g": 46798
         },
         {
             "date": "2026-05-31",
-            "price_22k_8g": 343226,
-            "price_24k_1g": 46800
+            "price_22k_8g": 342356,
+            "price_24k_1g": 46681
         }
     ]
 }
