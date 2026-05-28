@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-05-27 18:30",
+    "last_updated": "2026-05-28 08:06",
     "sentiment": "Bearish (පහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "පසුගිය දිනවල දේශීය වෙළඳපොලේ රත්‍රන් මිලෙහි පැහැදිලි අඩුවීමක් දක්නට ලැබෙන අතර, ලෝක පුවත් ද මීට සමානුපාතිකව පවතී. මේ හේතුවෙන් ඉදිරි දිනවලද මිල පහළ යනු ඇතැයි අපේක්ෂා කෙරේ.",
     "news": [
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
+        "Gold price outlook: Are we on track for $6,000 in 2026?",
         "UBS lowers 2026 gold price forecast to $5,500/oz: ‘Markets are rediscovering the concept of opportunity cost’",
-        "Gold Price Today | Price of Gold Per Ounce | Gold Spot Price Charts",
         "What is the price of gold today?",
-        "Gold price outlook: Are we on track for $6,000 in 2026?"
+        "Stephen Leeb: Gold Price to US$18,000? Here's How it Can Happen"
     ],
     "forecast": [
         {
-            "date": "2026-05-28",
+            "date": "2026-05-29",
             "price_22k_8g": 350503,
             "price_24k_1g": 47794
         },
         {
-            "date": "2026-05-29",
+            "date": "2026-05-30",
             "price_22k_8g": 349266,
             "price_24k_1g": 47625
         },
         {
-            "date": "2026-05-30",
+            "date": "2026-05-31",
             "price_22k_8g": 348454,
             "price_24k_1g": 47515
         },
         {
-            "date": "2026-05-31",
+            "date": "2026-06-01",
             "price_22k_8g": 347898,
             "price_24k_1g": 47439
         },
         {
-            "date": "2026-06-01",
+            "date": "2026-06-02",
             "price_22k_8g": 347494,
             "price_24k_1g": 47384
         }
