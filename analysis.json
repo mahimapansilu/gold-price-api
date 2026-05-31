@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-05-30 17:17",
+    "last_updated": "2026-05-31 07:49",
     "sentiment": "Slightly Bullish (මිලෙහි සුළු වර්ධනයක්)",
     "reason": "ලෝක වෙළඳපොලේ තරමක පසුබෑමක් ගැන පුවත් පළ වුවද, දේශීයව පවතින ඉල්ලුම නිසා මිලෙහි යම් සුළු වර්ධනයක් පවත්වා ගනු ඇතැයි අනුමාන කෙරේ.",
     "news": [
+        "Gold Price Today | Price of Gold Per Ounce | Gold Spot Price Charts",
         "Gold price outlook: Are we on track for $6,000 in 2026?",
-        "21-Karat Gold Price Reaches JD 92.30 in the Local Market...",
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
-        "UBS lowers 2026 gold price forecast to $5,500/oz: ‘Markets are rediscovering the concept of opportunity cost’",
-        "Gold Price Correction and Technical Outlook – May 2026 Analysis | Kitco - News and Statistics"
+        "Gold vs. Bitcoin - Market Capitalization | Gold | Collection",
+        "Gold ETFs See 930 Billion Won Net Outflow"
     ],
     "forecast": [
         {
-            "date": "2026-05-31",
+            "date": "2026-06-01",
             "price_22k_8g": 357072,
             "price_24k_1g": 48691
         },
         {
-            "date": "2026-06-01",
+            "date": "2026-06-02",
             "price_22k_8g": 357973,
             "price_24k_1g": 48814
         },
         {
-            "date": "2026-06-02",
+            "date": "2026-06-03",
             "price_22k_8g": 358442,
             "price_24k_1g": 48878
         },
         {
-            "date": "2026-06-03",
+            "date": "2026-06-04",
             "price_22k_8g": 358652,
             "price_24k_1g": 48906
         },
         {
-            "date": "2026-06-04",
+            "date": "2026-06-05",
             "price_22k_8g": 358706,
             "price_24k_1g": 48914
         }
