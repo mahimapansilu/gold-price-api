@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-06-03 19:54",
+    "last_updated": "2026-06-04 08:24",
     "sentiment": "Slightly Bullish (මිලෙහි සුළු වර්ධනයක්)",
     "reason": "ලෝක වෙළඳපොලේ තරමක පසුබෑමක් ගැන පුවත් පළ වුවද, දේශීයව පවතින ඉල්ලුම නිසා මිලෙහි යම් සුළු වර්ධනයක් පවත්වා ගනු ඇතැයි අනුමාන කෙරේ.",
     "news": [
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
-        "What is the price of gold today?",
-        "TD Securities cuts H2 2026 gold price forecasts as markets price in Fed rate hike",
+        "Gold Price Today | Price of Gold Per Ounce | Gold Spot Price Charts",
         "Current price of gold as of June 2, 2026",
+        "TD Securities cuts H2 2026 gold price forecasts as markets price in Fed rate hike",
         "Gold prices today, Monday, June 1: Gold prices moving lower this morning"
     ],
     "forecast": [
         {
-            "date": "2026-06-04",
-            "price_22k_8g": 357161,
-            "price_24k_1g": 48697
-        },
-        {
             "date": "2026-06-05",
-            "price_22k_8g": 357036,
-            "price_24k_1g": 48680
+            "price_22k_8g": 358191,
+            "price_24k_1g": 48842
         },
         {
             "date": "2026-06-06",
-            "price_22k_8g": 356890,
-            "price_24k_1g": 48661
+            "price_22k_8g": 358263,
+            "price_24k_1g": 48852
         },
         {
             "date": "2026-06-07",
-            "price_22k_8g": 356731,
-            "price_24k_1g": 48639
+            "price_22k_8g": 358235,
+            "price_24k_1g": 48848
         },
         {
             "date": "2026-06-08",
-            "price_22k_8g": 356564,
-            "price_24k_1g": 48616
+            "price_22k_8g": 358147,
+            "price_24k_1g": 48836
+        },
+        {
+            "date": "2026-06-09",
+            "price_22k_8g": 358022,
+            "price_24k_1g": 48819
         }
     ]
 }
