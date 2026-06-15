@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-06-15 10:29",
+    "last_updated": "2026-06-15 19:52",
     "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
     "news": [
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
-        "Gold Price Today | Price of Gold Per Ounce | Gold Spot Price Charts",
-        "Why is the price of gold trending down?",
-        "Gold price outlook: Are we on track to hit $6,000 in 2026",
-        "China gold market update: Official buying accelerated in May | Post by Ray Jia | Insights"
+        "Current price of gold as of June 15, 2026",
+        "Gold prices today, Monday, June 15: Gold moves higher following U.S., Iran ceasefire agreement",
+        "Gold drifts higher as Iran, U.S. agree to halt war",
+        "Why is the price of gold trending down?"
     ],
     "forecast": [
         {
             "date": "2026-06-16",
-            "price_22k_8g": 358156,
-            "price_24k_1g": 48834
+            "price_22k_8g": 357980,
+            "price_24k_1g": 48810
         },
         {
             "date": "2026-06-17",
-            "price_22k_8g": 361593,
-            "price_24k_1g": 49303
+            "price_22k_8g": 361238,
+            "price_24k_1g": 49254
         },
         {
             "date": "2026-06-18",
-            "price_22k_8g": 363728,
-            "price_24k_1g": 49594
+            "price_22k_8g": 363192,
+            "price_24k_1g": 49521
         },
         {
             "date": "2026-06-19",
-            "price_22k_8g": 365083,
-            "price_24k_1g": 49778
+            "price_22k_8g": 364365,
+            "price_24k_1g": 49681
         },
         {
             "date": "2026-06-20",
-            "price_22k_8g": 365969,
-            "price_24k_1g": 49899
+            "price_22k_8g": 365069,
+            "price_24k_1g": 49777
         }
     ]
 }
