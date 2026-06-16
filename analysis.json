@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-06-15 19:52",
-    "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
-    "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
+    "last_updated": "2026-06-16 09:31",
+    "sentiment": "Slightly Bearish (මිලෙහි සුළු පසුබෑමක්)",
+    "reason": "ලෝක වෙළඳපොලේ ධනාත්මක පුවත් පැවතියද, දේශීය වෙළඳපොලේ පසුගිය දිනවල දක්නට ලැබුණු මිල අඩුවීමේ ප්‍රවණතාවය (Correction) තවදුරටත් සුළු වශයෙන් බලපෑම් කළ හැක.",
     "news": [
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
-        "Current price of gold as of June 15, 2026",
-        "Gold prices today, Monday, June 15: Gold moves higher following U.S., Iran ceasefire agreement",
-        "Gold drifts higher as Iran, U.S. agree to halt war",
-        "Why is the price of gold trending down?"
+        "Silver Price Today | Silver Spot Price Charts",
+        "Why is the price of gold trending down?",
+        "Gold Price Forecast: XAU/USD holds gains above $4,300 amid cautious markets",
+        "When Gold’s Price “Goes Up,” You’re Reading It Backward"
     ],
     "forecast": [
         {
-            "date": "2026-06-16",
-            "price_22k_8g": 357980,
-            "price_24k_1g": 48810
-        },
-        {
             "date": "2026-06-17",
-            "price_22k_8g": 361238,
-            "price_24k_1g": 49254
+            "price_22k_8g": 346564,
+            "price_24k_1g": 47258
         },
         {
             "date": "2026-06-18",
-            "price_22k_8g": 363192,
-            "price_24k_1g": 49521
+            "price_22k_8g": 345351,
+            "price_24k_1g": 47093
         },
         {
             "date": "2026-06-19",
-            "price_22k_8g": 364365,
-            "price_24k_1g": 49681
+            "price_22k_8g": 344692,
+            "price_24k_1g": 47003
         },
         {
             "date": "2026-06-20",
-            "price_22k_8g": 365069,
-            "price_24k_1g": 49777
+            "price_22k_8g": 344366,
+            "price_24k_1g": 46959
+        },
+        {
+            "date": "2026-06-21",
+            "price_22k_8g": 344238,
+            "price_24k_1g": 46941
         }
     ]
 }
