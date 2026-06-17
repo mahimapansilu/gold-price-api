@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-06-17 09:06",
+    "last_updated": "2026-06-17 18:26",
     "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
     "news": [
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
-        "What is the price of gold today?",
-        "Why is the price of gold trending down?",
+        "Current price of gold as of June 15, 2026",
         "GoldMining's Sao Jorge Project Emerges as Key Asset in Rising Gold Market",
-        "Gold drifts higher as Iran, U.S. agree to halt war"
+        "Gold little changed as markets eye Warsh's Fed debut, US-Iran deal details",
+        "Gold prices slip after morning gain"
     ],
     "forecast": [
         {
             "date": "2026-06-18",
-            "price_22k_8g": 353980,
-            "price_24k_1g": 48270
+            "price_22k_8g": 354156,
+            "price_24k_1g": 48294
         },
         {
             "date": "2026-06-19",
-            "price_22k_8g": 355168,
-            "price_24k_1g": 48432
+            "price_22k_8g": 355521,
+            "price_24k_1g": 48480
         },
         {
             "date": "2026-06-20",
-            "price_22k_8g": 355880,
-            "price_24k_1g": 48529
+            "price_22k_8g": 356411,
+            "price_24k_1g": 48601
         },
         {
             "date": "2026-06-21",
-            "price_22k_8g": 356308,
-            "price_24k_1g": 48587
+            "price_22k_8g": 357017,
+            "price_24k_1g": 48684
         },
         {
             "date": "2026-06-22",
-            "price_22k_8g": 356565,
-            "price_24k_1g": 48622
+            "price_22k_8g": 357452,
+            "price_24k_1g": 48743
         }
     ]
 }
