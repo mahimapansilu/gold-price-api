@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-06-20 17:40",
+    "last_updated": "2026-06-21 08:38",
     "sentiment": "Bearish (පහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "පසුගිය දිනවල දේශීය වෙළඳපොලේ රත්‍රන් මිලෙහි පැහැදිලි අඩුවීමක් දක්නට ලැබෙන අතර, ලෝක පුවත් ද මීට සමානුපාතිකව පවතී. මේ හේතුවෙන් ඉදිරි දිනවලද මිල පහළ යනු ඇතැයි අපේක්ෂා කෙරේ.",
     "news": [
@@ -7,31 +7,31 @@
         "Gold on track for third weekly loss on firm dollar, hawkish Fed signals",
         "Current price of gold as of June 18, 2026",
         "Hawkish Fed could push gold prices back to $4,000 next week",
-        "Hawkish Fed signals send gold to third straight weekly loss"
+        "India gold market update: Demand cools | Post by Kavita Chacko | Insights"
     ],
     "forecast": [
         {
-            "date": "2026-06-21",
+            "date": "2026-06-22",
             "price_22k_8g": 339158,
             "price_24k_1g": 46247
         },
         {
-            "date": "2026-06-22",
+            "date": "2026-06-23",
             "price_22k_8g": 336396,
             "price_24k_1g": 45870
         },
         {
-            "date": "2026-06-23",
+            "date": "2026-06-24",
             "price_22k_8g": 334673,
             "price_24k_1g": 45635
         },
         {
-            "date": "2026-06-24",
+            "date": "2026-06-25",
             "price_22k_8g": 333572,
             "price_24k_1g": 45485
         },
         {
-            "date": "2026-06-25",
+            "date": "2026-06-26",
             "price_22k_8g": 332846,
             "price_24k_1g": 45386
         }
