@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-06-24 11:10",
+    "last_updated": "2026-06-24 18:01",
     "sentiment": "Bearish (පහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "පසුගිය දිනවල දේශීය වෙළඳපොලේ රත්‍රන් මිලෙහි පැහැදිලි අඩුවීමක් දක්නට ලැබෙන අතර, ලෝක පුවත් ද මීට සමානුපාතිකව පවතී. මේ හේතුවෙන් ඉදිරි දිනවලද මිල පහළ යනු ඇතැයි අපේක්ෂා කෙරේ.",
     "news": [
+        "Current price of gold as of June 24, 2026",
+        "Gold tumbles to $4,000 over worries of Fed rate hikes",
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
-        "BMO cuts gold price forecast as Fed’s hawkish shift weighs on precious metals",
-        "Gold and silver tumble as rate-hike fears hit precious metals",
-        "Gold price slumps as tech selloff reverberates through global markets",
-        "Current price of gold as of June 23, 2026"
+        "Gold hits over seven-month low as dollar firms, rate hike bets rise",
+        "Gold Price Today | Price of Gold Per Ounce | Gold Spot Price Charts"
     ],
     "forecast": [
         {
             "date": "2026-06-25",
-            "price_22k_8g": 335560,
-            "price_24k_1g": 45752
+            "price_22k_8g": 335730,
+            "price_24k_1g": 45775
         },
         {
             "date": "2026-06-26",
-            "price_22k_8g": 333791,
-            "price_24k_1g": 45511
+            "price_22k_8g": 334128,
+            "price_24k_1g": 45557
         },
         {
             "date": "2026-06-27",
-            "price_22k_8g": 332662,
-            "price_24k_1g": 45357
+            "price_22k_8g": 333166,
+            "price_24k_1g": 45426
         },
         {
             "date": "2026-06-28",
-            "price_22k_8g": 331919,
-            "price_24k_1g": 45256
+            "price_22k_8g": 332590,
+            "price_24k_1g": 45347
         },
         {
             "date": "2026-06-29",
-            "price_22k_8g": 331407,
-            "price_24k_1g": 45186
+            "price_22k_8g": 332244,
+            "price_24k_1g": 45300
         }
     ]
 }
