@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-07-01 18:04",
+    "last_updated": "2026-07-02 07:37",
     "sentiment": "Slightly Bullish (මිලෙහි සුළු වර්ධනයක්)",
     "reason": "ලෝක වෙළඳපොලේ තරමක පසුබෑමක් ගැන පුවත් පළ වුවද, දේශීයව පවතින ඉල්ලුම නිසා මිලෙහි යම් සුළු වර්ධනයක් පවත්වා ගනු ඇතැයි අනුමාන කෙරේ.",
     "news": [
-        "Why has the gold price fallen?",
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
-        "Gold losses ease after worst quarter in 13 years as interest rate fears hit bullion",
-        "Current price of gold as of July 1, 2026",
-        "Gold Mid-Year Outlook 2026: Point break"
+        "Why has the gold price fallen?",
+        "Gold Mid-Year Outlook 2026: Point break",
+        "Current price of gold as of June 29, 2026",
+        "Gold losses ease after worst quarter in 13 years as interest rate fears hit bullion"
     ],
     "forecast": [
         {
-            "date": "2026-07-02",
-            "price_22k_8g": 334582,
-            "price_24k_1g": 45618
-        },
-        {
             "date": "2026-07-03",
-            "price_22k_8g": 334685,
-            "price_24k_1g": 45632
+            "price_22k_8g": 340290,
+            "price_24k_1g": 46401
         },
         {
             "date": "2026-07-04",
-            "price_22k_8g": 334680,
-            "price_24k_1g": 45631
+            "price_22k_8g": 341506,
+            "price_24k_1g": 46567
         },
         {
             "date": "2026-07-05",
-            "price_22k_8g": 334610,
-            "price_24k_1g": 45622
+            "price_22k_8g": 342167,
+            "price_24k_1g": 46657
         },
         {
             "date": "2026-07-06",
-            "price_22k_8g": 334501,
-            "price_24k_1g": 45607
+            "price_22k_8g": 342495,
+            "price_24k_1g": 46702
+        },
+        {
+            "date": "2026-07-07",
+            "price_22k_8g": 342623,
+            "price_24k_1g": 46720
         }
     ]
 }
