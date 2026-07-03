@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-07-02 17:57",
+    "last_updated": "2026-07-03 07:30",
     "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
     "news": [
-        "Live Gold Prices | Gold News And Analysis | Mining News | KITCO",
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
         "Current price of gold as of July 2, 2026",
-        "Gold gains more than 2% after weak US payrolls report",
-        "Gold price outlook: Could prices hit $6,000 in 2026?"
+        "Gold price outlook: Could prices hit $6,000 in 2026?",
+        "Gold price jumps above $4,100 as U.S. economy created 57k jobs in June",
+        "Gold Mid-Year Outlook 2026: Point break"
     ],
     "forecast": [
         {
-            "date": "2026-07-03",
-            "price_22k_8g": 340460,
-            "price_24k_1g": 46424
-        },
-        {
             "date": "2026-07-04",
-            "price_22k_8g": 341846,
-            "price_24k_1g": 46613
+            "price_22k_8g": 348882,
+            "price_24k_1g": 47573
         },
         {
             "date": "2026-07-05",
-            "price_22k_8g": 342677,
-            "price_24k_1g": 46727
+            "price_22k_8g": 351432,
+            "price_24k_1g": 47921
         },
         {
             "date": "2026-07-06",
-            "price_22k_8g": 343176,
-            "price_24k_1g": 46795
+            "price_22k_8g": 353034,
+            "price_24k_1g": 48139
         },
         {
             "date": "2026-07-07",
-            "price_22k_8g": 343475,
-            "price_24k_1g": 46836
+            "price_22k_8g": 354066,
+            "price_24k_1g": 48280
+        },
+        {
+            "date": "2026-07-08",
+            "price_22k_8g": 354756,
+            "price_24k_1g": 48374
         }
     ]
 }
