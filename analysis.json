@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-07-03 17:40",
+    "last_updated": "2026-07-04 06:53",
     "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
     "news": [
-        "Gold prices set for first weekly rise in a month as investors scale back Fed rate hike bets",
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
+        "Gold prices set for first weekly rise in a month as investors scale back Fed rate hike bets",
+        "Gold Digest: Five Institutions Just Said the Same Thing About the Selloff",
         "Gold Prices Rise 1st Week in 5 as Markets Re-Think Fed Rate Rise",
-        "Gold Price Today | Price of Gold Per Ounce | Gold Spot Price Charts",
         "Gold price outlook: Could prices hit $6,000 in 2026?"
     ],
     "forecast": [
         {
-            "date": "2026-07-04",
+            "date": "2026-07-05",
             "price_22k_8g": 348882,
             "price_24k_1g": 47573
         },
         {
-            "date": "2026-07-05",
+            "date": "2026-07-06",
             "price_22k_8g": 351432,
             "price_24k_1g": 47921
         },
         {
-            "date": "2026-07-06",
+            "date": "2026-07-07",
             "price_22k_8g": 353034,
             "price_24k_1g": 48139
         },
         {
-            "date": "2026-07-07",
+            "date": "2026-07-08",
             "price_22k_8g": 354066,
             "price_24k_1g": 48280
         },
         {
-            "date": "2026-07-08",
+            "date": "2026-07-09",
             "price_22k_8g": 354756,
             "price_24k_1g": 48374
         }
