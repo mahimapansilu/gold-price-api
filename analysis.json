@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-07-05 17:20",
-    "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
-    "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
+    "last_updated": "2026-07-06 08:37",
+    "sentiment": "Bearish (පහළ යෑමේ ප්‍රවණතාවයක්)",
+    "reason": "පසුගිය දිනවල දේශීය වෙළඳපොලේ රත්‍රන් මිලෙහි පැහැදිලි අඩුවීමක් දක්නට ලැබෙන අතර, ලෝක පුවත් ද මීට සමානුපාතිකව පවතී. මේ හේතුවෙන් ඉදිරි දිනවලද මිල පහළ යනු ඇතැයි අපේක්ෂා කෙරේ.",
     "news": [
         "Gold prices set for first weekly rise in a month as investors scale back Fed rate hike bets",
-        "Gold Exchange Universe Launches Portal Version 24k — Sydney’s Precious Metal Buyers for Scrap Gold, Gold Bullion and Jewellery, Paying Close to 98% of Spot",
+        "Gold prices fall",
+        "JPMorgan sees $4,500 gold price in fourth quarter, says risks to downside",
         "Gold and Silver Jump as Weak Jobs Data Crushes Fed Rate-Rise Bets",
-        "Gold price outlook: Could prices hit $6,000 in 2026?",
-        "Gold price jumps above $4,100 as U.S. economy created 57k jobs in June"
+        "Gold price outlook: Could prices hit $6,000 in 2026?"
     ],
     "forecast": [
         {
-            "date": "2026-07-06",
-            "price_22k_8g": 348882,
-            "price_24k_1g": 47573
-        },
-        {
             "date": "2026-07-07",
-            "price_22k_8g": 351432,
-            "price_24k_1g": 47921
+            "price_22k_8g": 343870,
+            "price_24k_1g": 46885
         },
         {
             "date": "2026-07-08",
-            "price_22k_8g": 353034,
-            "price_24k_1g": 48139
+            "price_22k_8g": 343672,
+            "price_24k_1g": 46858
         },
         {
             "date": "2026-07-09",
-            "price_22k_8g": 354066,
-            "price_24k_1g": 48280
+            "price_22k_8g": 343553,
+            "price_24k_1g": 46841
         },
         {
             "date": "2026-07-10",
-            "price_22k_8g": 354756,
-            "price_24k_1g": 48374
+            "price_22k_8g": 343481,
+            "price_24k_1g": 46832
+        },
+        {
+            "date": "2026-07-11",
+            "price_22k_8g": 343439,
+            "price_24k_1g": 46826
         }
     ]
 }
