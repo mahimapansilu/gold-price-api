@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-07-08 17:45",
+    "last_updated": "2026-07-09 07:45",
     "sentiment": "Bearish (පහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "පසුගිය දිනවල දේශීය වෙළඳපොලේ රත්‍රන් මිලෙහි පැහැදිලි අඩුවීමක් දක්නට ලැබෙන අතර, ලෝක පුවත් ද මීට සමානුපාතිකව පවතී. මේ හේතුවෙන් ඉදිරි දිනවලද මිල පහළ යනු ඇතැයි අපේක්ෂා කෙරේ.",
     "news": [
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
+        "The Fed Is Split 9 to 8. Gold and Silver Are Paying the Price — Until July 14.",
         "Current price of gold as of July 8, 2026",
-        "Gold drifts lower after Trump says deal with Iran 'over'",
         "Gold edges down as Middle East tensions propel oil prices higher, Fed minutes awaited",
-        "Gold prices fall as Trump casts doubt on Iran deal"
+        "Blue Gold Limited Receives Nasdaq Notice of Non-Compliance With Bid Price and Market Value Listing Requirements"
     ],
     "forecast": [
         {
-            "date": "2026-07-09",
-            "price_22k_8g": 339879,
-            "price_24k_1g": 46344
-        },
-        {
             "date": "2026-07-10",
-            "price_22k_8g": 339259,
-            "price_24k_1g": 46259
+            "price_22k_8g": 338320,
+            "price_24k_1g": 46133
         },
         {
             "date": "2026-07-11",
-            "price_22k_8g": 338820,
-            "price_24k_1g": 46200
+            "price_22k_8g": 337762,
+            "price_24k_1g": 46057
         },
         {
             "date": "2026-07-12",
-            "price_22k_8g": 338488,
-            "price_24k_1g": 46154
+            "price_22k_8g": 337427,
+            "price_24k_1g": 46011
         },
         {
             "date": "2026-07-13",
-            "price_22k_8g": 338222,
-            "price_24k_1g": 46118
+            "price_22k_8g": 337226,
+            "price_24k_1g": 45984
+        },
+        {
+            "date": "2026-07-14",
+            "price_22k_8g": 337105,
+            "price_24k_1g": 45967
         }
     ]
 }
