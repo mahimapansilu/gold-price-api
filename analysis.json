@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-07-14 06:18",
+    "last_updated": "2026-07-14 10:05",
     "sentiment": "Bearish (පහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "පසුගිය දිනවල දේශීය වෙළඳපොලේ රත්‍රන් මිලෙහි පැහැදිලි අඩුවීමක් දක්නට ලැබෙන අතර, ලෝක පුවත් ද මීට සමානුපාතිකව පවතී. මේ හේතුවෙන් ඉදිරි දිනවලද මිල පහළ යනු ඇතැයි අපේක්ෂා කෙරේ.",
     "news": [
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
-        "Gold forecast and tracker: Where will prices land in 2026?",
+        "China gold market update: June concludes a divided H1 | Post by Ray Jia | Insights",
+        "Gold bounces from two-week low, markets await US inflation data",
         "Current price of gold as of July 13, 2026",
-        "Bank of America sees value in gold miners even after cutting 2026 gold price forecast",
-        "Gold drops 3% as rising Middle East tensions fuel rate-hike prospects"
+        "Gold forecast and tracker: Where will prices land in 2026?"
     ],
     "forecast": [
         {
             "date": "2026-07-15",
-            "price_22k_8g": 334771,
-            "price_24k_1g": 45644
+            "price_22k_8g": 334940,
+            "price_24k_1g": 45667
         },
         {
             "date": "2026-07-16",
-            "price_22k_8g": 333758,
-            "price_24k_1g": 45506
+            "price_22k_8g": 334094,
+            "price_24k_1g": 45552
         },
         {
             "date": "2026-07-17",
-            "price_22k_8g": 333083,
-            "price_24k_1g": 45414
+            "price_22k_8g": 333586,
+            "price_24k_1g": 45483
         },
         {
             "date": "2026-07-18",
-            "price_22k_8g": 332612,
-            "price_24k_1g": 45350
+            "price_22k_8g": 333281,
+            "price_24k_1g": 45441
         },
         {
             "date": "2026-07-19",
-            "price_22k_8g": 332263,
-            "price_24k_1g": 45302
+            "price_22k_8g": 333099,
+            "price_24k_1g": 45416
         }
     ]
 }
