@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-07-20 06:54",
-    "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
-    "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
+    "last_updated": "2026-07-20 11:08",
+    "sentiment": "Slightly Bullish (මිලෙහි සුළු වර්ධනයක්)",
+    "reason": "ලෝක වෙළඳපොලේ තරමක පසුබෑමක් ගැන පුවත් පළ වුවද, දේශීයව පවතින ඉල්ලුම නිසා මිලෙහි යම් සුළු වර්ධනයක් පවත්වා ගනු ඇතැයි අනුමාන කෙරේ.",
     "news": [
-        "Gold steady as markets assess Middle East escalation, Fed hike bets",
+        "Gold steady as investors gauge US-Iran risks and Fed signals",
         "Gold Is The Constant—What Is The Signal In Its Substantial Decline?",
         "Current price of gold: Month Day, Year",
-        "Markets will find out next week how firm $4,000 is as a floor for gold",
-        "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days"
+        "Gold Futures Overview",
+        "Gold prices continue to drop"
     ],
     "forecast": [
         {
             "date": "2026-07-21",
-            "price_22k_8g": 336500,
-            "price_24k_1g": 45882
+            "price_22k_8g": 336332,
+            "price_24k_1g": 45859
         },
         {
             "date": "2026-07-22",
-            "price_22k_8g": 336950,
-            "price_24k_1g": 45943
+            "price_22k_8g": 336613,
+            "price_24k_1g": 45897
         },
         {
             "date": "2026-07-23",
-            "price_22k_8g": 337220,
-            "price_24k_1g": 45980
+            "price_22k_8g": 336715,
+            "price_24k_1g": 45911
         },
         {
             "date": "2026-07-24",
-            "price_22k_8g": 337382,
-            "price_24k_1g": 46002
+            "price_22k_8g": 336709,
+            "price_24k_1g": 45910
         },
         {
             "date": "2026-07-25",
-            "price_22k_8g": 337479,
-            "price_24k_1g": 46015
+            "price_22k_8g": 336638,
+            "price_24k_1g": 45901
         }
     ]
 }
