@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-07-21 17:36",
+    "last_updated": "2026-07-22 06:36",
     "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
     "news": [
-        "Gold Prices Have Tanked. Buying the Dip Makes Sense.",
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
-        "Current price of gold as of July 21, 2026",
         "Gold Price Today | Price of Gold Per Ounce | Gold Spot Price Charts",
-        "Gold Price Forecast: Gold Rebounds From $4,000 Amid Market Uncertainty"
+        "Current price of gold as of July 21, 2026",
+        "Gold Prices Have Tanked. Buying the Dip Makes Sense.",
+        "Gold's risk/reward has flipped in investors' favor despite rate hike fears, says Wells Fargo’s Samana"
     ],
     "forecast": [
         {
-            "date": "2026-07-22",
-            "price_22k_8g": 337918,
-            "price_24k_1g": 46075
-        },
-        {
             "date": "2026-07-23",
-            "price_22k_8g": 338537,
-            "price_24k_1g": 46159
+            "price_22k_8g": 345331,
+            "price_24k_1g": 47090
         },
         {
             "date": "2026-07-24",
-            "price_22k_8g": 338976,
-            "price_24k_1g": 46219
+            "price_22k_8g": 347339,
+            "price_24k_1g": 47364
         },
         {
             "date": "2026-07-25",
-            "price_22k_8g": 339308,
-            "price_24k_1g": 46264
+            "price_22k_8g": 348614,
+            "price_24k_1g": 47538
         },
         {
             "date": "2026-07-26",
-            "price_22k_8g": 339575,
-            "price_24k_1g": 46301
+            "price_22k_8g": 349450,
+            "price_24k_1g": 47652
+        },
+        {
+            "date": "2026-07-27",
+            "price_22k_8g": 350021,
+            "price_24k_1g": 47730
         }
     ]
 }
