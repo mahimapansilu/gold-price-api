@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-07-30 10:31",
+    "last_updated": "2026-07-30 17:42",
     "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
     "news": [
+        "Current price of gold as of July 30, 2026",
         "Gold market shows resilience as price momentum cools in Q2",
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
-        "Gold steadies as markets assess Fed rate stance, Middle East situation",
         "Gold Price Today | Price of Gold Per Ounce | Gold Spot Price Charts",
-        "Gold price jumps as Federal Reserve leaves interest rates unchanged"
+        "Gold rises on weaker US dollar, soft inflation data"
     ],
     "forecast": [
         {
             "date": "2026-07-31",
-            "price_22k_8g": 341139,
-            "price_24k_1g": 46512
+            "price_22k_8g": 340970,
+            "price_24k_1g": 46489
         },
         {
             "date": "2026-08-01",
-            "price_22k_8g": 342012,
-            "price_24k_1g": 46631
+            "price_22k_8g": 341672,
+            "price_24k_1g": 46585
         },
         {
             "date": "2026-08-02",
-            "price_22k_8g": 342604,
-            "price_24k_1g": 46712
+            "price_22k_8g": 342093,
+            "price_24k_1g": 46642
         },
         {
             "date": "2026-08-03",
-            "price_22k_8g": 343028,
-            "price_24k_1g": 46770
+            "price_22k_8g": 342345,
+            "price_24k_1g": 46677
         },
         {
             "date": "2026-08-04",
-            "price_22k_8g": 343351,
-            "price_24k_1g": 46814
+            "price_22k_8g": 342497,
+            "price_24k_1g": 46697
         }
     ]
 }
