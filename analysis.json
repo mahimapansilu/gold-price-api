@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-07-31 17:46",
+    "last_updated": "2026-08-01 06:35",
     "sentiment": "Slightly Bearish (මිලෙහි සුළු පසුබෑමක්)",
     "reason": "ලෝක වෙළඳපොලේ ධනාත්මක පුවත් පැවතියද, දේශීය වෙළඳපොලේ පසුගිය දිනවල දක්නට ලැබුණු මිල අඩුවීමේ ප්‍රවණතාවය (Correction) තවදුරටත් සුළු වශයෙන් බලපෑම් කළ හැක.",
     "news": [
+        "Will gold prices extend their record-breaking run?",
         "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
-        "Gold rises on weaker U.S. dollar, soft inflation data",
-        "Gold price jumps as Federal Reserve leaves interest rates unchanged",
-        "Gold market shows resilience as price momentum cools in Q2",
-        "Current price of gold as of July 28, 2026"
+        "Gold Price Today | Price of Gold Per Ounce | Gold Spot Price Charts",
+        "Kinross Earnings: Strong Gold Price Offsets Lower Volumes and Rising Unit Costs",
+        "Wall Street trisected on gold’s near-term prospects, Main Street bulls in minority as market looks to July payrolls for direction"
     ],
     "forecast": [
         {
-            "date": "2026-08-01",
+            "date": "2026-08-02",
             "price_22k_8g": 339729,
             "price_24k_1g": 46320
         },
         {
-            "date": "2026-08-02",
+            "date": "2026-08-03",
             "price_22k_8g": 339845,
             "price_24k_1g": 46336
         },
         {
-            "date": "2026-08-03",
+            "date": "2026-08-04",
             "price_22k_8g": 339983,
             "price_24k_1g": 46355
         },
         {
-            "date": "2026-08-04",
+            "date": "2026-08-05",
             "price_22k_8g": 340133,
             "price_24k_1g": 46375
         },
         {
-            "date": "2026-08-05",
+            "date": "2026-08-06",
             "price_22k_8g": 340292,
             "price_24k_1g": 46397
         }
