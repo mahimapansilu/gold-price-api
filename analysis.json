@@ -1,35 +1,39 @@
 {
-    "last_updated": "2026-08-11 17:04",
-    "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
-    "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
+    "last_updated": "2026-08-12 05:41",
+    "sentiment": "Slightly Bearish (මිලෙහි සුළු පසුබෑමක්)",
+    "reason": "ලෝක වෙළඳපොලේ ධනාත්මක පුවත් පැවතියද, දේශීය වෙළඳපොලේ පසුගිය දිනවල දක්නට ලැබුණු මිල අඩුවීමේ ප්‍රවණතාවය (Correction) තවදුරටත් සුළු වශයෙන් බලපෑම් කළ හැක.",
     "news": [
-        "දැනට ලෝක වෙළඳපොළ පුවත් ලබාගැනීම තාවකාලිකව ඇනහිට ඇත."
+        "Oil, gold prices rise as geopolitical tensions mount before CPI",
+        "Gold (XAU/USD) Price Forecast for Today, Tomorrow, Next Week, and the Next 30 Days",
+        "Gold Price Today | Price of Gold Per Ounce | Gold Spot Price Charts",
+        "Gold prices today, Monday, August 10, 2026: Highest opening price since early June",
+        "Current price of gold as of August 10, 2026"
     ],
     "forecast": [
         {
-            "date": "2026-08-12",
-            "price_22k_8g": 359430,
-            "price_24k_1g": 49012
-        },
-        {
             "date": "2026-08-13",
-            "price_22k_8g": 361068,
-            "price_24k_1g": 49235
+            "price_22k_8g": 354557,
+            "price_24k_1g": 48345
         },
         {
             "date": "2026-08-14",
-            "price_22k_8g": 362050,
-            "price_24k_1g": 49369
+            "price_22k_8g": 354212,
+            "price_24k_1g": 48298
         },
         {
             "date": "2026-08-15",
-            "price_22k_8g": 362640,
-            "price_24k_1g": 49450
+            "price_22k_8g": 354076,
+            "price_24k_1g": 48280
         },
         {
             "date": "2026-08-16",
-            "price_22k_8g": 362994,
-            "price_24k_1g": 49498
+            "price_22k_8g": 354065,
+            "price_24k_1g": 48278
+        },
+        {
+            "date": "2026-08-17",
+            "price_22k_8g": 354130,
+            "price_24k_1g": 48287
         }
     ]
 }
