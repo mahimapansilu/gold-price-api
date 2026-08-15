@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-08-14 17:00",
+    "last_updated": "2026-08-15 04:38",
     "sentiment": "Slightly Bearish (මිලෙහි සුළු පසුබෑමක්)",
     "reason": "ලෝක වෙළඳපොලේ ධනාත්මක පුවත් පැවතියද, දේශීය වෙළඳපොලේ පසුගිය දිනවල දක්නට ලැබුණු මිල අඩුවීමේ ප්‍රවණතාවය (Correction) තවදුරටත් සුළු වශයෙන් බලපෑම් කළ හැක.",
     "news": [
         "China gold market update: Strong official sector buying in July | Post by Ray Jia | Insights",
-        "Gold Price Today | Price of Gold Per Ounce | Gold Spot Price Charts",
         "Where gold price is headed next as Fed rate hike and inflation odds change direction",
-        "Gold firms on weaker dollar as inflation data cements rate hold bets",
-        "Gold prices must overcome this next hurdle before another bullish run"
+        "Gold prices must overcome this next hurdle before another bullish run",
+        "Gold price shakes off early profit taking after run to 10-week high",
+        "Oil prices climb again, as global stocks gain"
     ],
     "forecast": [
         {
-            "date": "2026-08-15",
+            "date": "2026-08-16",
             "price_22k_8g": 347195,
             "price_24k_1g": 47340
         },
         {
-            "date": "2026-08-16",
+            "date": "2026-08-17",
             "price_22k_8g": 345550,
             "price_24k_1g": 47116
         },
         {
-            "date": "2026-08-17",
+            "date": "2026-08-18",
             "price_22k_8g": 344632,
             "price_24k_1g": 46991
         },
         {
-            "date": "2026-08-18",
+            "date": "2026-08-19",
             "price_22k_8g": 344150,
             "price_24k_1g": 46925
         },
         {
-            "date": "2026-08-19",
+            "date": "2026-08-20",
             "price_22k_8g": 343929,
             "price_24k_1g": 46895
         }
