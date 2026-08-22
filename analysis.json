@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-08-21 16:41",
+    "last_updated": "2026-08-22 04:40",
     "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
     "news": [
-        "Gold Price Today | Price of Gold Per Ounce | 24 Hour Spot Chart",
+        "Why did the gold price rise?",
         "Gold rebounds as bond jitters, debt fears and weaker dollar revive bullion demand",
+        "How Bessent’s Efforts to Calm Bond Market Set Gold Prices Ablaze",
         "India gold market update: Recovery taking shape | Post by Kavita Chacko | Insights",
-        "Gold Price Forecast: XAU/USD extends rally as US debt concerns continue to drag US Dollar",
-        "Current price of gold as of August 19, 2026"
+        "Gold, silver extend rally as dollar slide offsets higher yields - Kitco PM Report"
     ],
     "forecast": [
         {
-            "date": "2026-08-22",
-            "price_22k_8g": 359010,
-            "price_24k_1g": 48949
-        },
-        {
             "date": "2026-08-23",
-            "price_22k_8g": 359406,
-            "price_24k_1g": 49003
+            "price_22k_8g": 359189,
+            "price_24k_1g": 48974
         },
         {
             "date": "2026-08-24",
-            "price_22k_8g": 359643,
-            "price_24k_1g": 49036
+            "price_22k_8g": 359764,
+            "price_24k_1g": 49052
         },
         {
             "date": "2026-08-25",
-            "price_22k_8g": 359786,
-            "price_24k_1g": 49055
+            "price_22k_8g": 360182,
+            "price_24k_1g": 49109
         },
         {
             "date": "2026-08-26",
-            "price_22k_8g": 359871,
-            "price_24k_1g": 49067
+            "price_22k_8g": 360504,
+            "price_24k_1g": 49153
+        },
+        {
+            "date": "2026-08-27",
+            "price_22k_8g": 360770,
+            "price_24k_1g": 49190
         }
     ]
 }
