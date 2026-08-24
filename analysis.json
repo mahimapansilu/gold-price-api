@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-08-24 04:52",
+    "last_updated": "2026-08-24 08:56",
     "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
     "news": [
@@ -7,33 +7,33 @@
         "Why did the gold price rise?",
         "Gold rebounds as bond jitters, debt fears and weaker dollar revive bullion demand",
         "India gold market update: Recovery taking shape | Post by Kavita Chacko | Insights",
-        "India Gold Market Shows Signs of Recovery as Demand Rebounds"
+        "Gold Prices Surge Amid Dollar Weakness and Treasury Market Inter"
     ],
     "forecast": [
         {
             "date": "2026-08-25",
-            "price_22k_8g": 359189,
-            "price_24k_1g": 48974
+            "price_22k_8g": 366990,
+            "price_24k_1g": 50041
         },
         {
             "date": "2026-08-26",
-            "price_22k_8g": 359764,
-            "price_24k_1g": 49052
+            "price_22k_8g": 368934,
+            "price_24k_1g": 50306
         },
         {
             "date": "2026-08-27",
-            "price_22k_8g": 360182,
-            "price_24k_1g": 49109
+            "price_22k_8g": 370100,
+            "price_24k_1g": 50465
         },
         {
             "date": "2026-08-28",
-            "price_22k_8g": 360504,
-            "price_24k_1g": 49153
+            "price_22k_8g": 370800,
+            "price_24k_1g": 50561
         },
         {
             "date": "2026-08-29",
-            "price_22k_8g": 360770,
-            "price_24k_1g": 49190
+            "price_22k_8g": 371220,
+            "price_24k_1g": 50618
         }
     ]
 }
