@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-08-24 16:46",
+    "last_updated": "2026-08-25 04:46",
     "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
     "news": [
-        "Gold prices today, Monday, August 24, 2026: 'Gold to stay hot through the end of the month'",
+        "Why gold and silver prices have added $5 trillion in value",
         "Current price of gold as of August 24, 2026",
-        "Gold rally gains momentum ahead of US inflation, Jackson Hole event",
-        "Gold rebounds as bond jitters, debt fears and weaker dollar revive bullion demand",
-        "Zanjani Launches Private Gold Market Despite Central Bank Warnings"
+        "Gold rally gains momentum ahead of US inflation data, Jackson Hole event",
+        "The debasement trade is back, but gold still faces risks - Analysts",
+        "Gold Price Today: August 20, 2026"
     ],
     "forecast": [
         {
-            "date": "2026-08-25",
-            "price_22k_8g": 366990,
-            "price_24k_1g": 50041
-        },
-        {
             "date": "2026-08-26",
-            "price_22k_8g": 368934,
-            "price_24k_1g": 50306
+            "price_22k_8g": 367171,
+            "price_24k_1g": 50066
         },
         {
             "date": "2026-08-27",
-            "price_22k_8g": 370100,
-            "price_24k_1g": 50465
+            "price_22k_8g": 369299,
+            "price_24k_1g": 50356
         },
         {
             "date": "2026-08-28",
-            "price_22k_8g": 370800,
-            "price_24k_1g": 50561
+            "price_22k_8g": 370650,
+            "price_24k_1g": 50540
         },
         {
             "date": "2026-08-29",
-            "price_22k_8g": 371220,
-            "price_24k_1g": 50618
+            "price_22k_8g": 371535,
+            "price_24k_1g": 50661
+        },
+        {
+            "date": "2026-08-30",
+            "price_22k_8g": 372141,
+            "price_24k_1g": 50744
         }
     ]
 }
