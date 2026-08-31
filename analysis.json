@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-08-30 19:15",
+    "last_updated": "2026-08-31 10:44",
     "sentiment": "Bearish (පහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "පසුගිය දිනවල දේශීය වෙළඳපොලේ රත්‍රන් මිලෙහි පැහැදිලි අඩුවීමක් දක්නට ලැබෙන අතර, ලෝක පුවත් ද මීට සමානුපාතිකව පවතී. මේ හේතුවෙන් ඉදිරි දිනවලද මිල පහළ යනු ඇතැයි අපේක්ෂා කෙරේ.",
     "news": [
+        "Gold hits near two-week low on Fed chief's hawkish stance",
         "Current price of gold: Aug. 28, 2026",
         "Gold prices today, Friday, August 28, 2026: Gold steady as markets prepare for Warsh speech",
-        "Gold price remains under pressure as U.S. new home sales fall 10.5% in July",
         "Gold Is Forecast to Climb as Central Banks Buy the Precious Metal",
-        "Gold drops as Fed's Warsh comments lift rate hike bets"
+        "Gold price remains under pressure as U.S. new home sales fall 10.5% in July"
     ],
     "forecast": [
         {
-            "date": "2026-08-31",
-            "price_22k_8g": 357510,
-            "price_24k_1g": 48750
-        },
-        {
             "date": "2026-09-01",
-            "price_22k_8g": 356035,
-            "price_24k_1g": 48549
+            "price_22k_8g": 346714,
+            "price_24k_1g": 47273
         },
         {
             "date": "2026-09-02",
-            "price_22k_8g": 355079,
-            "price_24k_1g": 48419
+            "price_22k_8g": 343624,
+            "price_24k_1g": 46852
         },
         {
             "date": "2026-09-03",
-            "price_22k_8g": 354435,
-            "price_24k_1g": 48331
+            "price_22k_8g": 341703,
+            "price_24k_1g": 46590
         },
         {
             "date": "2026-09-04",
-            "price_22k_8g": 353978,
-            "price_24k_1g": 48269
+            "price_22k_8g": 340482,
+            "price_24k_1g": 46423
+        },
+        {
+            "date": "2026-09-05",
+            "price_22k_8g": 339682,
+            "price_24k_1g": 46314
         }
     ]
 }
