@@ -1,35 +1,39 @@
 {
-    "last_updated": "2026-09-05 08:16",
-    "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
-    "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
+    "last_updated": "2026-09-05 18:05",
+    "sentiment": "Slightly Bullish (මිලෙහි සුළු වර්ධනයක්)",
+    "reason": "ලෝක වෙළඳපොලේ තරමක පසුබෑමක් ගැන පුවත් පළ වුවද, දේශීයව පවතින ඉල්ලුම නිසා මිලෙහි යම් සුළු වර්ධනයක් පවත්වා ගනු ඇතැයි අනුමාන කෙරේ.",
     "news": [
-        "දැනට ලෝක වෙළඳපොළ පුවත් ලබාගැනීම තාවකාලිකව ඇනහිට ඇත."
+        "Current price of gold as of September 3, 2026",
+        "What’s Next for Gold Prices After the Latest Rebound?",
+        "Gold price hit with major selling as U.S. economy creates 162K jobs in August",
+        "Gold prices today, Monday, August 31, 2026: Gold sinks following U.S. strikes on Iran",
+        "Gold price outlook: What lies ahead for the yellow metal? Here's what Goldman Sachs says on bull run prediction"
     ],
     "forecast": [
         {
             "date": "2026-09-06",
-            "price_22k_8g": 356690,
-            "price_24k_1g": 48637
+            "price_22k_8g": 356512,
+            "price_24k_1g": 48613
         },
         {
             "date": "2026-09-07",
-            "price_22k_8g": 357824,
-            "price_24k_1g": 48792
+            "price_22k_8g": 357468,
+            "price_24k_1g": 48743
         },
         {
             "date": "2026-09-08",
-            "price_22k_8g": 358504,
-            "price_24k_1g": 48885
+            "price_22k_8g": 357970,
+            "price_24k_1g": 48812
         },
         {
             "date": "2026-09-09",
-            "price_22k_8g": 358912,
-            "price_24k_1g": 48940
+            "price_22k_8g": 358199,
+            "price_24k_1g": 48843
         },
         {
             "date": "2026-09-10",
-            "price_22k_8g": 359157,
-            "price_24k_1g": 48974
+            "price_22k_8g": 358265,
+            "price_24k_1g": 48852
         }
     ]
 }
