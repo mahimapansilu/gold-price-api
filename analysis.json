@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-09-05 18:05",
+    "last_updated": "2026-09-06 08:34",
     "sentiment": "Slightly Bullish (මිලෙහි සුළු වර්ධනයක්)",
     "reason": "ලෝක වෙළඳපොලේ තරමක පසුබෑමක් ගැන පුවත් පළ වුවද, දේශීයව පවතින ඉල්ලුම නිසා මිලෙහි යම් සුළු වර්ධනයක් පවත්වා ගනු ඇතැයි අනුමාන කෙරේ.",
     "news": [
         "Current price of gold as of September 3, 2026",
         "What’s Next for Gold Prices After the Latest Rebound?",
         "Gold price hit with major selling as U.S. economy creates 162K jobs in August",
-        "Gold prices today, Monday, August 31, 2026: Gold sinks following U.S. strikes on Iran",
-        "Gold price outlook: What lies ahead for the yellow metal? Here's what Goldman Sachs says on bull run prediction"
+        "Gold Futures Overview",
+        "Gold Price Outlook: Dead Cat Bounce Risk as Bearish Signals Build"
     ],
     "forecast": [
         {
-            "date": "2026-09-06",
+            "date": "2026-09-07",
             "price_22k_8g": 356512,
             "price_24k_1g": 48613
         },
         {
-            "date": "2026-09-07",
+            "date": "2026-09-08",
             "price_22k_8g": 357468,
             "price_24k_1g": 48743
         },
         {
-            "date": "2026-09-08",
+            "date": "2026-09-09",
             "price_22k_8g": 357970,
             "price_24k_1g": 48812
         },
         {
-            "date": "2026-09-09",
+            "date": "2026-09-10",
             "price_22k_8g": 358199,
             "price_24k_1g": 48843
         },
         {
-            "date": "2026-09-10",
+            "date": "2026-09-11",
             "price_22k_8g": 358265,
             "price_24k_1g": 48852
         }
