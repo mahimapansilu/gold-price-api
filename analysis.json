@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-09-11 19:05",
+    "last_updated": "2026-09-12 08:33",
     "sentiment": "Slightly Bearish (මිලෙහි සුළු පසුබෑමක්)",
     "reason": "ලෝක වෙළඳපොලේ ධනාත්මක පුවත් පැවතියද, දේශීය වෙළඳපොලේ පසුගිය දිනවල දක්නට ලැබුණු මිල අඩුවීමේ ප්‍රවණතාවය (Correction) තවදුරටත් සුළු වශයෙන් බලපෑම් කළ හැක.",
     "news": [
-        "Gold prices holding its ground following muted U.S. CPI data",
-        "Gold rises on dip-buying even as Fed rate hike bets rise after U.S. inflation data",
-        "Gold Rebounds Toward $4,350 as Markets Await US CPI Data",
-        "Gold Price Forecast – A Dangerous Crossroads for Markets",
-        "Current price of gold as of September 10, 2026"
+        "Gold Price Canada Today | Live Gold Price in CAD",
+        "Current price of gold as of September 10, 2026",
+        "Gold climbs on subdued U.S. dollar as inflation data awaited amid oil rally",
+        "Gold rises on dip-buying even as Fed rate hike bets rise after US inflation data",
+        "Gold prices gain"
     ],
     "forecast": [
         {
-            "date": "2026-09-12",
+            "date": "2026-09-13",
             "price_22k_8g": 344813,
             "price_24k_1g": 47017
         },
         {
-            "date": "2026-09-13",
+            "date": "2026-09-14",
             "price_22k_8g": 343330,
             "price_24k_1g": 46815
         },
         {
-            "date": "2026-09-14",
+            "date": "2026-09-15",
             "price_22k_8g": 342508,
             "price_24k_1g": 46702
         },
         {
-            "date": "2026-09-15",
+            "date": "2026-09-16",
             "price_22k_8g": 342083,
             "price_24k_1g": 46645
         },
         {
-            "date": "2026-09-16",
+            "date": "2026-09-17",
             "price_22k_8g": 341896,
             "price_24k_1g": 46619
         }
