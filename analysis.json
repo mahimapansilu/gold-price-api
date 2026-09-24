@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-09-23 19:36",
+    "last_updated": "2026-09-24 09:12",
     "sentiment": "Slightly Bearish (මිලෙහි සුළු පසුබෑමක්)",
     "reason": "ලෝක වෙළඳපොලේ ධනාත්මක පුවත් පැවතියද, දේශීය වෙළඳපොලේ පසුගිය දිනවල දක්නට ලැබුණු මිල අඩුවීමේ ප්‍රවණතාවය (Correction) තවදුරටත් සුළු වශයෙන් බලපෑම් කළ හැක.",
     "news": [
         "Current price of gold as of September 23, 2026",
-        "TSX futures dip amid gold price fall; Mideast peace hopes in focus",
+        "Gold lacklustre as higher-for-longer rate outlook weighs on sentiment",
         "Gold price today, Tuesday, September 22, 2026: Gold prices holding as Chinese gold imports set record",
-        "India gold market update: Cautious festive optimism | Post by Kavita Chacko | Insights",
-        "Gold price holds above $4,330 as Hormuz diplomacy pressures oil - Kitco AM Report"
+        "Gold prices hit 5-week bottom",
+        "Gold prices fall as dollar firms and bonds slide on Fed rate hike bets; oil surges"
     ],
     "forecast": [
         {
-            "date": "2026-09-24",
-            "price_22k_8g": 348274,
-            "price_24k_1g": 47491
-        },
-        {
             "date": "2026-09-25",
-            "price_22k_8g": 347998,
-            "price_24k_1g": 47453
+            "price_22k_8g": 343902,
+            "price_24k_1g": 46891
         },
         {
             "date": "2026-09-26",
-            "price_22k_8g": 347902,
-            "price_24k_1g": 47440
+            "price_22k_8g": 342922,
+            "price_24k_1g": 46758
         },
         {
             "date": "2026-09-27",
-            "price_22k_8g": 347914,
-            "price_24k_1g": 47442
+            "price_22k_8g": 342403,
+            "price_24k_1g": 46687
         },
         {
             "date": "2026-09-28",
-            "price_22k_8g": 347991,
-            "price_24k_1g": 47452
+            "price_22k_8g": 342159,
+            "price_24k_1g": 46654
+        },
+        {
+            "date": "2026-09-29",
+            "price_22k_8g": 342081,
+            "price_24k_1g": 46643
         }
     ]
 }
