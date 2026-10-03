@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-10-02 20:35",
+    "last_updated": "2026-10-03 09:47",
     "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
     "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
     "news": [
+        "Gold Price Canada Today | Live Gold Price in CAD",
         "Gold price outlook: Could prices hit $6,000 in 2026?",
         "Current price of gold: Month Day, Year",
-        "Gold’s resilience supports strong outlook, silver faces oversupply, copper could be the big gainer – Deutsche Bank’s Ghali",
         "Gold edges up as softer inflation data dents Fed rate-hike bets",
         "Gold Price Forecast: XAU/USD Plunges 12.4% Toward Critical Support"
     ],
     "forecast": [
         {
-            "date": "2026-10-03",
+            "date": "2026-10-04",
             "price_22k_8g": 340620,
             "price_24k_1g": 46443
         },
         {
-            "date": "2026-10-04",
+            "date": "2026-10-05",
             "price_22k_8g": 340880,
             "price_24k_1g": 46479
         },
         {
-            "date": "2026-10-05",
+            "date": "2026-10-06",
             "price_22k_8g": 341104,
             "price_24k_1g": 46509
         },
         {
-            "date": "2026-10-06",
+            "date": "2026-10-07",
             "price_22k_8g": 341307,
             "price_24k_1g": 46537
         },
         {
-            "date": "2026-10-07",
+            "date": "2026-10-08",
             "price_22k_8g": 341497,
             "price_24k_1g": 46563
         }
