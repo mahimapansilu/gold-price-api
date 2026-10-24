@@ -1,37 +1,37 @@
 {
-    "last_updated": "2026-10-23 19:53",
+    "last_updated": "2026-10-24 08:47",
     "sentiment": "Slightly Bullish (මිලෙහි සුළු වර්ධනයක්)",
     "reason": "ලෝක වෙළඳපොලේ තරමක පසුබෑමක් ගැන පුවත් පළ වුවද, දේශීයව පවතින ඉල්ලුම නිසා මිලෙහි යම් සුළු වර්ධනයක් පවත්වා ගනු ඇතැයි අනුමාන කෙරේ.",
     "news": [
-        "Current price of gold as of October 23, 2026",
+        "Gold Price Canada Today | Live Gold Price in CAD",
         "Gold drops below $4,000 as ‘haven’ asset joins market sell-off",
-        "Gold set for steep weekly loss as rising oil prices bolster Fed rate hike bets",
-        "Gold Falls Below $4,000 for the First Time Since July. What’s Next?",
-        "Gold price trades near $4,000/oz after final Consumer Sentiment holds steady at 48, inflation expectations rise"
+        "Current price of gold as of October 23, 2026",
+        "India gold market update: Seasonal demand shows early strength | Post by Kavita Chacko | Insights",
+        "Why Is the Gold Price Falling Even as Investors and Central Banks Pile In?"
     ],
     "forecast": [
         {
-            "date": "2026-10-24",
+            "date": "2026-10-25",
             "price_22k_8g": 341879,
             "price_24k_1g": 46619
         },
         {
-            "date": "2026-10-25",
+            "date": "2026-10-26",
             "price_22k_8g": 342338,
             "price_24k_1g": 46682
         },
         {
-            "date": "2026-10-26",
+            "date": "2026-10-27",
             "price_22k_8g": 342545,
             "price_24k_1g": 46710
         },
         {
-            "date": "2026-10-27",
+            "date": "2026-10-28",
             "price_22k_8g": 342600,
             "price_24k_1g": 46718
         },
         {
-            "date": "2026-10-28",
+            "date": "2026-10-29",
             "price_22k_8g": 342565,
             "price_24k_1g": 46713
         }
