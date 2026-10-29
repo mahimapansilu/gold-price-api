@@ -1,39 +1,39 @@
 {
-    "last_updated": "2026-10-28 20:55",
-    "sentiment": "Slightly Bullish (මිලෙහි සුළු වර්ධනයක්)",
-    "reason": "ලෝක වෙළඳපොලේ තරමක පසුබෑමක් ගැන පුවත් පළ වුවද, දේශීයව පවතින ඉල්ලුම නිසා මිලෙහි යම් සුළු වර්ධනයක් පවත්වා ගනු ඇතැයි අනුමාන කෙරේ.",
+    "last_updated": "2026-10-29 10:48",
+    "sentiment": "Bullish (ඉහළ යෑමේ ප්‍රවණතාවයක්)",
+    "reason": "රත්‍රන් මිලෙහි පැහැදිලි වර්ධනයක් (Uptrend) දක්නට ලැබෙන අතර, ලෝක ආර්ථික පුවත් ද මීට සහාය දක්වයි. එබැවින් ඉදිරි දිනවල මිල තවදුරටත් ඉහළ යා හැක.",
     "news": [
-        "Gold edges lower ahead of Fed rate decision, Warsh comments",
-        "Current price of gold as of October 28, 2026",
-        "Gold Price Canada Today | Live Gold Price in CAD",
-        "Gold stalls its recovery as markets brace for Fed interest rate decision",
-        "Spot gold little changed after U.S. Fed rate decision, last down 0.5%"
+        "Gold slides 1% as Fed hike bets linger ahead of US inflation data",
+        "Current price of gold as of October 26, 2026",
+        "Gold price today, Tuesday, October 27, 2026: Gold prices slipping closer to $4,000 ahead of Fed meeting",
+        "Gold slips on higher oil; markets assess Warsh comments after Fed holds rates steady",
+        "Gold, Silver Prices: Why Precious Metals Could Stay Elevated In 2026"
     ],
     "forecast": [
         {
-            "date": "2026-10-29",
-            "price_22k_8g": 341879,
-            "price_24k_1g": 46619
-        },
-        {
             "date": "2026-10-30",
-            "price_22k_8g": 342338,
-            "price_24k_1g": 46682
+            "price_22k_8g": 342220,
+            "price_24k_1g": 46666
         },
         {
             "date": "2026-10-31",
-            "price_22k_8g": 342545,
-            "price_24k_1g": 46710
+            "price_22k_8g": 343021,
+            "price_24k_1g": 46775
         },
         {
             "date": "2026-11-01",
-            "price_22k_8g": 342600,
-            "price_24k_1g": 46718
+            "price_22k_8g": 343571,
+            "price_24k_1g": 46850
         },
         {
             "date": "2026-11-02",
-            "price_22k_8g": 342565,
-            "price_24k_1g": 46713
+            "price_22k_8g": 343969,
+            "price_24k_1g": 46904
+        },
+        {
+            "date": "2026-11-03",
+            "price_22k_8g": 344277,
+            "price_24k_1g": 46946
         }
     ]
 }
